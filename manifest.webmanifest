@@ -1,6 +1,6 @@
 {
-  "name": "ADRIANA v24 — Assistant Daily Reporting & Analytics",
-  "short_name": "ADRIANA v24",
+  "name": "ADRIANA v24.1 — Assistant Daily Reporting & Analytics",
+  "short_name": "ADRIANA v24.1",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -9,17 +9,7 @@
   "description": "AMANTA-based daily operational reporting and analytics.",
   "orientation": "portrait-primary",
   "icons": [
-    {
-      "src": "./icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "./icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
+    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
   ]
 }
