@@ -167,7 +167,7 @@ body{background:#f4f7f3}
 
 <section id="quality" class="section"><div class="title">Harvest Quality</div><div class="meta">Recorded quality evidence, not a block-wide conclusion.</div><div class="panel" style="margin-top:14px"><table><thead><tr><th>Block</th><th>Mandoran</th><th>Sample Pokok</th><th>Piringan Non-Std</th><th>Buah Tinggal</th></tr></thead><tbody id="qualityBody"><tr><td colspan="5" class="small">No active dataset.</td></tr></tbody></table></div></section>
 
-<section id="transport" class="section"><div class="title">Transport & Restan</div><div class="meta">Net weight calculated from reconciled scale records. BJR = total net TBS (kg) ÷ total JJG. READY → GO uses DTREADY to DT_GO.</div><div class="panel" style="margin-top:14px"><table><thead><tr><th>KAB Number</th><th>Rit</th><th>Ready → Go</th><th>Weight In</th><th>Weight Out</th><th>Net</th><th>Duration</th></tr></thead><tbody id="transportBody"><tr><td colspan="7" class="small">No active dataset.</td></tr></tbody></table><div id="restanNotice" class="notice" style="margin-top:14px">Restan: unavailable.</div></div></section>
+<section id="transport" class="section"><div style="display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap"><div><div class="title">Transport & Restan</div><div class="meta">Net weight calculated from reconciled scale records. BJR = total net TBS (kg) ÷ total JJG. READY → GO uses DTREADY to DT_GO.</div></div><button class="btn" type="button" onclick="downloadTransportCSV()">Download Transport CSV</button></div><div class="panel" style="margin-top:14px"><table><thead><tr><th>KAB Number</th><th>Rit</th><th>Ready → Go</th><th>Weight In</th><th>Weight Out</th><th>Net</th><th>Duration</th></tr></thead><tbody id="transportBody"><tr><td colspan="7" class="small">No active dataset.</td></tr></tbody></table><div id="restanNotice" class="notice" style="margin-top:14px">Restan: unavailable.</div></div></section>
 
 
 <section id="exception" class="section">
@@ -611,6 +611,34 @@ function downloadRotationCalendarCSV(){
  const out=[['AFD',afd,'Month',ROTATION_VIEW_MONTH],[],['Seksi','Block',...dates]];
  rows.forEach(r=>{out.push([r.sec,r.block,...dates.map(dt=>{const prior=r.dates.filter(x=>x<=dt);if(!prior.length)return '';return Math.max(0,daysBetween(prior[prior.length-1],dt));})]);});
  downloadCSV(`ADRIANA_Rotation_Calendar_${afd}_${y}-${String(m+1).padStart(2,'0')}.csv`,out);
+}
+function downloadTransportCSV(){
+ if(!ACTIVE||!window.ADRIANA_DATA){alert('Belum ada dataset aktif.');return;}
+ const d=window.ADRIANA_DATA,tr=d.sections?.TR_TBS_TRANSPORT;
+ if(!tr||!tr.rows?.length){alert('Data Transport belum tersedia pada dataset aktif.');return;}
+ const h=tr.header||[], ri=h.indexOf('RITNUMBER'), wi=h.indexOf('WEIGHTIN'), wo=h.indexOf('WEIGHTOUT'), ready=h.indexOf('DTREADY'), go=h.indexOf('DT_GO'), kb=h.indexOf('KABNUMBER');
+ const rows=[];
+ rows.push(['ADRIANA TRANSPORT EXPORT']);
+ rows.push(['Tanggal',d.date||ACTIVE.date||'']);
+ rows.push([]);
+ rows.push(['KAB Number','Rit','READY (DTREADY)','GO (DT_GO)','Weight In','Weight Out','Net','Duration']);
+ tr.rows.forEach((r,i)=>{
+   const kab=kb>=0?cleanCell(r[kb]):'—', rit=ri>=0?cleanCell(r[ri]):String(i+1);
+   const rawIn=wi>=0?cleanCell(r[wi]):'—', rawOut=wo>=0?cleanCell(r[wo]):'—';
+   const a=parseFloat(rawIn.replace(/,/g,'')), b=parseFloat(rawOut.replace(/,/g,''));
+   const net=Number.isFinite(a)&&Number.isFinite(b)?a-b:null;
+   const av=ready>=0?parseAmantaDateTime(r[ready]):null, bv=go>=0?parseAmantaDateTime(r[go]):null;
+   const readyVal=av?formatAmantaDateTimeForExport(av):cleanCell(ready>=0?r[ready]:'');
+   const goVal=bv?formatAmantaDateTimeForExport(bv):cleanCell(go>=0?r[go]:'');
+   const duration=av&&bv&&bv>=av?Math.round((bv-av)/60000)+' min':'—';
+   rows.push([kab,rit,readyVal,goVal,rawIn,rawOut,net!==null&&net>0?net:'—',duration]);
+ });
+ downloadCSV(`ADRIANA_Transport_${d.date||ACTIVE.date||'dataset'}.csv`,rows);
+}
+function formatAmantaDateTimeForExport(dt){
+ if(!(dt instanceof Date)||isNaN(dt))return '';
+ const p=n=>String(n).padStart(2,'0');
+ return `${dt.getFullYear()}-${p(dt.getMonth()+1)}-${p(dt.getDate())} ${p(dt.getHours())}:${p(dt.getMinutes())}:${p(dt.getSeconds())}`;
 }
 function renderTransport(d){const tr=d.sections.TR_TBS_TRANSPORT;if(!tr){document.getElementById('transportBody').innerHTML='<tr><td colspan="7">Transport data unavailable.</td></tr>';return}const h=tr.header,ri=h.indexOf('RITNUMBER'),wi=h.indexOf('WEIGHTIN'),wo=h.indexOf('WEIGHTOUT'),ready=h.indexOf('DTREADY'),go=h.indexOf('DT_GO'),kb=h.indexOf('KABNUMBER');const groups={};tr.rows.forEach((r,i)=>{const kab=kb>=0?cleanCell(r[kb]):'—';(groups[kab]??=[]).push({r,i})});let rows=[];Object.entries(groups).forEach(([kab,items])=>items.forEach(({r,i})=>{const rawIn=cleanCell(r[wi]),rawOut=cleanCell(r[wo]);const a=parseFloat(rawIn.replace(/,/g,'')),b=parseFloat(rawOut.replace(/,/g,''));const net=Number.isFinite(a)&&Number.isFinite(b)?a-b:null;const av=parseAmantaDateTime(r[ready]),bv=parseAmantaDateTime(r[go]);let duration='—',readyTime='—',goTime='—';if(av)readyTime=av.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});if(bv)goTime=bv.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});if(av&&bv&&bv>=av)duration=Math.round((bv-av)/60000)+' min';const rit=cleanCell(r[ri]);rows.push(`<tr><td><b>${html.escape(kab)}</b></td><td><b>Rit ${html.escape(rit==='—'?String(i+1):rit)}</b></td><td class="small">${readyTime} → ${goTime}</td><td>${html.escape(rawIn)}</td><td>${html.escape(rawOut)}</td><td>${net!==null&&net>0?net.toLocaleString():'—'}</td><td><b>${duration}</b></td></tr>`)}));document.getElementById('transportBody').innerHTML=rows.join('')||'<tr><td colspan="7">No transport data.</td></tr>';document.getElementById('restanNotice').innerHTML='<b>Restan:</b> unavailable unless an explicit confirmed field exists in the active AMANTA dataset. <b>BJR:</b> calculated automatically from net TBS weight (kg) ÷ JJG.'}
 function renderDashboard(d){const blocks=Object.entries(d.blocks).sort((a,b)=>b[1]-a[1]);const ranked=attentionRank(d),focus=ranked[0]?.b||null,focusSet=new Set(ranked.slice(0,2).map(x=>x.b));document.querySelector('#dashboard table tbody').innerHTML=blocks.map(([b,j])=>{const review=b===focus?'<span class="tag">INVESTIGATE</span>':(focusSet.has(b)?'Watch':'Monitor');return `<tr><td><b>${html.escape(b)}</b></td><td>${j.toLocaleString()}</td><td>${d.jjg?((j/d.jjg)*100).toFixed(1):0}%</td><td>${review}</td></tr>`}).join('')||'<tr><td colspan="4">No production data.</td></tr>';const sig=[];if(blocks[0]&&d.jjg&&blocks[0][1]/d.jjg>=.35)sig.push(`Dominant block: <b>${html.escape(blocks[0][0])}</b> · ${blocks[0][1].toLocaleString()} JJG · ${(blocks[0][1]/d.jjg*100).toFixed(1)}%`);if(d.byMandoran?.OCPN1&&d.byMandoran?.OCPN2){const a=d.byMandoran.OCPN1.j/d.byMandoran.OCPN1.n.size,b=d.byMandoran.OCPN2.j/d.byMandoran.OCPN2.n.size;if(Math.abs(a-b)/Math.min(a,b)>=.3)sig.push(`Mandoran gap: OCPN1 ${a.toFixed(2)} vs OCPN2 ${b.toFixed(2)} JJG/HK — investigate context.`)}const q=d.sections.SAMPLING_KUALITAS_PANEN;if(q){const h=q.header,pi=h.indexOf('PIRINGANTDKSTDR');const n=q.rows.reduce((a,r)=>a+num(r[pi]),0);if(n)sig.push(`Quality evidence: ${n} non-standard circle(s) recorded in sampling.`)}const sic=d.sections.TR_SIC_MP;if(sic){const h=sic.header,si=h.indexOf('STATUS'),ys=sic.rows.filter(r=>String(r[si]).toUpperCase()==='Y').length,ns=sic.rows.length-ys;sig.push(`SIC recorded: ${ys} Y / ${ns} N — denominator definition still pending.`)}document.getElementById('dashboardSignals').innerHTML=sig.map((x,i)=>`<div class="signal"><div class="num">0${i+1}</div><div><b>${x}</b></div></div>`).join('')||'<div class="notice">No operational signal available.</div>';document.getElementById('dashboardDecision').textContent='Investigate '+(focus||'Review dataset');document.getElementById('dashboardDecisionText').textContent='Validate low production against harvest quality and field evidence.'} 
