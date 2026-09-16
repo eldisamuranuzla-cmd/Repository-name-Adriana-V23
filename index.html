@@ -40,7 +40,7 @@ body{background:#f4f7f3}
 @media(max-width:480px){.kpiGrid{grid-template-columns:1fr}.kpi{min-height:130px}.dashWelcome .title{font-size:23px}.quickGrid{grid-template-columns:1fr}.donutWrap{flex-direction:column}.donut{width:125px;height:125px}}
 .section#transport table{min-width:760px}.section#transport .panel{overflow-x:auto}.section#transport td,.section#transport th{white-space:nowrap}.harvestPerf{margin-top:12px}.harvestPerf .miniGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.miniCard{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fbfdfb}.miniCard h3{font-size:12px;margin:0 0 10px}.miniCard .big{font-size:22px;font-weight:900}.miniCard .small{margin-top:3px}.perfTable{margin-top:14px;overflow:auto}.perfTable table{min-width:720px}.rankBadge{font-size:9px;font-weight:900;padding:4px 7px;border-radius:7px;background:#e7f1eb;color:#155c3b}.rankBadge.low{background:#f8e9e6;color:#a94332}.perfNote{margin-top:10px;font-size:10px;color:var(--muted)}
 @media(max-width:950px){.astraLogo{width:72px;height:62px}}
-.rotationMatrixWrap{margin-top:4px}.rotationMatrixHead{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}.rotationLegend{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.rotationMatrix{min-width:max-content}.rotationMatrix th,.rotationMatrix td{padding:7px 8px;text-align:center;white-space:nowrap}.rotationMatrix th:first-child,.rotationMatrix td:first-child{text-align:left;position:sticky;left:0;background:inherit;z-index:2}.rotationMatrix th:nth-child(2),.rotationMatrix td:nth-child(2){position:sticky;left:75px;background:inherit;z-index:2}.rotationMatrix .secRow td{text-align:left;background:#eef7f1;color:#166534;border-top:2px solid #d7e9dc}.rotCell{display:inline-flex;width:27px;height:27px;align-items:center;justify-content:center;border-radius:7px;font-weight:800;font-size:12px}.rotCell.green,.rotSum.green{background:#dcfce7;color:#166534}.rotCell.yellow,.rotSum.yellow{background:#fef3c7;color:#92400e}.rotCell.red,.rotSum.red{background:#fee2e2;color:#991b1b}.rotCell.black,.rotSum.black{background:#e5e7eb;color:#111827}.rotCell.harvested{outline:2px solid #166534;outline-offset:1px}.rotDash{color:#94a3b8}.rotationSummary{margin-top:14px;padding-top:12px;border-top:1px solid #e5e7eb}.rotationSummaryGrid{display:grid;grid-template-columns:repeat(4,minmax(90px,1fr));gap:8px;margin-top:8px}.rotSum{padding:12px;border-radius:10px;text-align:center;display:flex;flex-direction:column;gap:3px}.rotSum strong{font-size:20px}@media(max-width:700px){.rotationSummaryGrid{grid-template-columns:repeat(2,1fr)}.rotationMatrix th,.rotationMatrix td{padding:6px}.rotCell{width:24px;height:24px}}
+.rotationMatrixWrap{margin-top:4px}.rotationMatrixHead{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}.rotationLegend{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.rotationMatrix{min-width:max-content} .rotationMatrixScroller{max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;touch-action:pan-x;overscroll-behavior-x:contain}.rotationMatrix th,.rotationMatrix td{padding:7px 8px;text-align:center;white-space:nowrap}.rotationMatrix th:first-child,.rotationMatrix td:first-child{text-align:left;position:sticky;left:0;background:inherit;z-index:3}.rotationMatrix .secRow td{text-align:left;background:#eef7f1;color:#166534;border-top:2px solid #d7e9dc}.rotCell{display:inline-flex;width:27px;height:27px;align-items:center;justify-content:center;border-radius:7px;font-weight:800;font-size:12px}.rotCell.green,.rotSum.green{background:#dcfce7;color:#166534}.rotCell.yellow,.rotSum.yellow{background:#fef3c7;color:#92400e}.rotCell.red,.rotSum.red{background:#fee2e2;color:#991b1b}.rotCell.black,.rotSum.black{background:#e5e7eb;color:#111827}.rotCell.harvested{outline:2px solid #166534;outline-offset:1px}.rotDash{color:#94a3b8}.rotationSummary{margin-top:14px;padding-top:12px;border-top:1px solid #e5e7eb}.rotationSummaryGrid{display:grid;grid-template-columns:repeat(4,minmax(90px,1fr));gap:8px;margin-top:8px}.rotSum{padding:12px;border-radius:10px;text-align:center;display:flex;flex-direction:column;gap:3px}.rotSum strong{font-size:20px}@media(max-width:700px){.rotationSummaryGrid{grid-template-columns:repeat(2,1fr)}.rotationMatrix th,.rotationMatrix td{padding:6px}.rotCell{width:24px;height:24px}}
 /* V18 compact rotation UI: logic unchanged, presentation optimized for mobile */
 .rotationToday{margin-top:10px}.rotationTodayHead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.rotationTodayTable{width:100%;border-collapse:collapse;margin-top:8px}.rotationTodayTable th,.rotationTodayTable td{padding:8px 9px;border-bottom:1px solid #e5ebe6;white-space:nowrap}.rotationTodayTable th{text-align:left;font-size:11px;color:#64748b;text-transform:uppercase}.rotationTodayTable td:nth-child(2),.rotationTodayTable td:nth-child(3){text-align:center}.rotAge{display:inline-flex;min-width:34px;height:26px;padding:0 7px;align-items:center;justify-content:center;border-radius:8px;font-weight:800;font-size:12px}.rotationSectionLabel{font-size:12px;font-weight:800;color:#166534;background:#eef7f1;padding:7px 9px}.rotationMatrixDetails{margin-top:12px;border:1px solid #dfe7e1;border-radius:10px;background:#fff;overflow:hidden}.rotationMatrixDetails summary{cursor:pointer;list-style:none;padding:11px 13px;font-weight:800}.rotationMatrixDetails summary::-webkit-details-marker{display:none}.rotationMatrixDetails summary:after{content:'＋';float:right}.rotationMatrixDetails[open] summary:after{content:'−'}.rotationMatrixDetails .rotationMatrixWrap{margin:0;border-top:1px solid #e5ebe6}.rotationMetaCompact{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.rotationMetaCompact .tag{font-size:10px;padding:4px 7px}.rotationTodayTable .statusCell{width:80px}@media(max-width:700px){.rotationTodayTable th,.rotationTodayTable td{padding:7px 6px;font-size:12px}.rotationTodayTable th{font-size:10px}.rotationTodayTable th:nth-child(4),.rotationTodayTable td:nth-child(4){display:none}.rotationMatrixDetails summary{padding:10px 11px}}
 
@@ -63,6 +63,16 @@ body{background:#f4f7f3}
 
 .peopleDashPanel{margin-top:12px}.peopleKpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.peopleKpi{background:#f7fbf8;border:1px solid #dce9e1;border-radius:12px;padding:12px}.peopleKpi small{display:block;color:#718277;font-size:9px;font-weight:800;letter-spacing:.04em}.peopleKpi strong{display:block;color:#164a32;font-size:21px;margin-top:5px}.peopleTableWrap{overflow-x:auto;margin-top:12px}.peopleTableWrap table{min-width:900px}.peopleTableWrap th,.peopleTableWrap td{white-space:nowrap}.peopleNote{font-size:10px;color:#718077;margin-top:9px}.peoplePeriodBar{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.peopleKpisLarge{margin-top:14px}.peopleClassGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}.classBox{border:1px solid var(--line);border-radius:12px;padding:12px}.classBox small{display:block;font-size:9px;font-weight:900}.classBox strong{display:block;font-size:24px;margin-top:3px}.classBox span{font-size:10px;color:var(--muted)}.classA{background:#eaf5ee;color:#155c3b}.classB{background:#fff8e8;color:#8b6118}.classC{background:#fbeceb;color:#a94332}.premiMoney{font-weight:900;color:#155c3b}.classPill{display:inline-block;padding:4px 8px;border-radius:8px;font-size:9px;font-weight:900}.classPill.A{background:#dcfce7;color:#166534}.classPill.B{background:#fef3c7;color:#92400e}.classPill.C{background:#fee2e2;color:#991b1b}.classPill.NA{background:#eef2f0;color:#64746a}
 @media(max-width:1000px){.peopleKpis{grid-template-columns:repeat(3,1fr)}}@media(max-width:650px){.peopleKpis,.peopleClassGrid{grid-template-columns:1fr 1fr}.peopleKpi strong{font-size:19px}}
+
+/* BOOK PERIOD / CLOSING */
+.periodClosingPanel{border:1px solid #d7e5dc}
+.periodClosingHead{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.periodStatus{padding:7px 11px;border-radius:999px;background:#e7f1eb;color:#155c3b;font-size:11px;font-weight:800;letter-spacing:.04em}
+.periodStatus.closed{background:#e8eef0;color:#34444b}
+.periodStatus.closing{background:#fff2d9;color:#8a5b0b}
+.periodKpis{margin-top:12px}
+.periodLogicNote{margin-top:12px}
+
 </style>
 </head>
 <body>
@@ -77,6 +87,7 @@ body{background:#f4f7f3}
     <button data-target="quality">Harvest Quality</button>
     <button data-target="transport">Transport & Restan</button>
     <button data-target="exception">Exception & Priority</button>
+    <button data-target="infield">Infield Control</button>
     <button data-target="people">People Performance</button>
     <button data-target="ai">AI Analysis</button>
     <button data-target="pdca">PDCA / Decision Log</button>
@@ -105,23 +116,28 @@ body{background:#f4f7f3}
 <div class="panel quickPanel"><div class="panelHead"><h2>⚡ &nbsp;Quick Actions</h2></div><div class="quickGrid"><button onclick="show('rotation')">⟳ &nbsp; View Rotation</button><button onclick="show('transport')">▰ &nbsp; Check Transport</button><button onclick="show('ai')">♧ &nbsp; Open AI Analysis</button><button onclick="show('pdca')">▤ &nbsp; Create PDCA</button></div></div>
 </div></div>
 
+<div class="panel" id="kkpDashboardPanel" style="margin-top:14px">
+  <div class="panelHead"><h2>KKP Harvest Production</h2><span>OC PN 1 + OC PN 2 · 6 KKP</span></div>
+  <div id="kkpDashboardSummary" class="notice">Upload &amp; lock AMANTA OCYM untuk menghitung output KKP.</div>
+  <div class="peopleTableWrap"><table><thead><tr><th>Rank</th><th>Wilayah</th><th>KKP</th><th>Pemanen</th><th>JJG</th><th>Total JJG</th><th>Status</th></tr></thead><tbody id="kkpDashboardBody"><tr><td colspan="7" class="small">Belum ada dataset OCYM aktif.</td></tr></tbody></table></div>
+</div>
 <div class="panel peopleDashPanel">
-  <div class="panelHead"><h2>People Performance &amp; Premi</h2><span>September 2026 onward</span></div>
+  <div class="panelHead"><h2>People Performance &amp; Premi</h2><span id="dashPeoplePeriod">Book Period —</span></div>
   <div class="peopleKpis">
     <div class="peopleKpi"><small>PEMANEN AKTIF</small><strong id="dashPeopleCount">—</strong></div>
     <div class="peopleKpi"><small>JJG TODAY</small><strong id="dashPeopleJjg">—</strong></div>
     <div class="peopleKpi"><small>MORE BASIS TODAY</small><strong id="dashPeopleMore">—</strong></div>
-    <div class="peopleKpi"><small>MORE BASIS MTD</small><strong id="dashPeopleMoreMtd">—</strong></div>
+    <div class="peopleKpi"><small>MORE BASIS PERIODE</small><strong id="dashPeopleMoreMtd">—</strong></div>
     <div class="peopleKpi"><small>PREMI HARI INI</small><strong id="dashPeoplePremi">—</strong></div>
-    <div class="peopleKpi"><small>PREMI MTD</small><strong id="dashPeoplePremiMtd">—</strong></div>
+    <div class="peopleKpi"><small>PREMI PERIODE</small><strong id="dashPeoplePremiMtd">—</strong></div>
   </div>
   <div class="peopleTableWrap">
     <table>
-      <thead><tr><th>Pemanen</th><th>JJG Today</th><th>Basis Blok (Avg)</th><th>More Basis</th><th>More Basis MTD</th><th>Premi Today</th><th>Premi MTD</th><th>Class</th></tr></thead>
+      <thead><tr><th>Pemanen</th><th>JJG Today</th><th>Basis Blok (Avg)</th><th>More Basis</th><th>More Basis Periode</th><th>Premi Today</th><th>Premi Periode</th><th>Class</th></tr></thead>
       <tbody id="dashPeopleBody"><tr><td colspan="7" class="small">Upload &amp; lock AMANTA untuk melihat People Performance.</td></tr></tbody>
     </table>
   </div>
-  <div class="peopleNote">Premi dihitung harian per pemanen: seluruh JJG pemanen dari blok yang benar-benar dipanen dikurangi rata-rata basis blok yang dipanen pemanen tersebut. More Basis dan Premi MTD diakumulasi dari tanggal 1 sampai tanggal aktif pada bulan berjalan. Minggu: Rp2.500/JJG. Jan–Aug 2026 tidak ditampilkan.</div>
+  <div class="peopleNote">Premi dihitung harian per pemanen: seluruh JJG pemanen dari blok yang benar-benar dipanen dikurangi rata-rata basis blok yang dipanen pemanen tersebut. More Basis dan Premi Periode diakumulasi berdasarkan Open Book–Closing Book. Periode payroll: tanggal 21 sampai tanggal 20 bulan berikutnya. Minggu: Rp2.500/JJG.</div>
 </div>
 <div class="sustainBanner"><div><strong>Sustainable Plantation<br>for a Better Tomorrow</strong><span>Operational intelligence built from AMANTA.</span></div><div class="leafStrip"></div><div class="bannerLogo"><img src="astra-agro-logo-compact.png" alt="Astra Agro Lestari"><div><b>ASTRA AGRO LESTARI</b><small>Prosper with the Nation</small></div></div></div>
 <div class="footer">ADRIANA v22.13 &nbsp;|&nbsp; AMANTA as source of truth · Unconfirmed semantics are displayed as unavailable.</div>
@@ -136,7 +152,7 @@ body{background:#f4f7f3}
 <div class="panel">
     <div class="notice">
     <b>Rotation Source: AMANTA history</b><br>
-    Rotation is calculated automatically from <b>BLOK + HARVDATE</b> recorded in locked AMANTA daily datasets. No separate rotation CSV is required.
+    Rotation is calculated automatically from <b>BLOK + HARVDATE</b> across AMANTA daily datasets starting <b>18 Aug 2026</b>. The current Daily Operational View is included so the chain continues even before the latest date is locked. No separate rotation CSV is required.
   </div>
   <div id="rotationResult" class="notice" style="margin-top:12px">
     <b>Rotation history belum tersedia.</b><br>
@@ -151,7 +167,7 @@ body{background:#f4f7f3}
 
 <section id="quality" class="section"><div class="title">Harvest Quality</div><div class="meta">Recorded quality evidence, not a block-wide conclusion.</div><div class="panel" style="margin-top:14px"><table><thead><tr><th>Block</th><th>Mandoran</th><th>Sample Pokok</th><th>Piringan Non-Std</th><th>Buah Tinggal</th></tr></thead><tbody id="qualityBody"><tr><td colspan="5" class="small">No active dataset.</td></tr></tbody></table></div></section>
 
-<section id="transport" class="section"><div class="title">Transport & Restan</div><div class="meta">Net weight calculated from reconciled scale records. BJR = total net TBS (kg) ÷ total JJG. READY → GO uses TBSREADY to DT_GO.</div><div class="panel" style="margin-top:14px"><table><thead><tr><th>KAB Number</th><th>Rit</th><th>Ready → Go</th><th>Weight In</th><th>Weight Out</th><th>Net</th><th>Duration</th></tr></thead><tbody id="transportBody"><tr><td colspan="7" class="small">No active dataset.</td></tr></tbody></table><div id="restanNotice" class="notice" style="margin-top:14px">Restan: unavailable.</div></div></section>
+<section id="transport" class="section"><div class="title">Transport & Restan</div><div class="meta">Net weight calculated from reconciled scale records. BJR = total net TBS (kg) ÷ total JJG. READY → GO uses DTREADY to DT_GO.</div><div class="panel" style="margin-top:14px"><table><thead><tr><th>KAB Number</th><th>Rit</th><th>Ready → Go</th><th>Weight In</th><th>Weight Out</th><th>Net</th><th>Duration</th></tr></thead><tbody id="transportBody"><tr><td colspan="7" class="small">No active dataset.</td></tr></tbody></table><div id="restanNotice" class="notice" style="margin-top:14px">Restan: unavailable.</div></div></section>
 
 
 <section id="exception" class="section">
@@ -171,26 +187,40 @@ body{background:#f4f7f3}
 
 
 
+<section id="infield" class="section">
+<div class="panel" style="margin-top:12px">
+<div class="panelHead"><h2>Infield Control — Real AMANTA</h2><span>PRODUKSI UNIT AMANTA · BJR Aktual</span></div>
+<div class="notice">Penginfield dikunci dari KODEUNIT. Tim Infield dibentuk dari NPK utama + NPKUTAMA (helper). JJG Infield berasal dari PRODUKSIUNIT.JJG berdasarkan KODEUNIT. JJG Langsir tidak dikurangkan karena data absen langsir tidak menyediakan JJG.</div>
+<div class="peopleKpis" style="margin-top:12px">
+<div class="peopleKpi"><small>PENGINFIELD</small><strong id="infieldPeople">—</strong></div>
+<div class="peopleKpi"><small>BLOK INFIELD</small><strong id="infieldBlocks">—</strong></div>
+<div class="peopleKpi"><small>JJG TAP GROSS</small><strong id="infieldGross">—</strong></div>
+<div class="peopleKpi"><small>JJG LANGSIR</small><strong id="infieldLangsir">—</strong></div>
+<div class="peopleKpi"><small>JJG INFIELD REAL</small><strong id="infieldNet">—</strong></div>
+</div>
+<div class="peopleTableWrap"><table><thead><tr><th>Rank</th><th>Tim Infield (NPK + Helper)</th><th>Kode Alat</th><th>Blok Summary</th><th>JJG TAP</th><th>Langsir</th><th>JJG Infield Real</th><th>BJR Aktual</th><th>Tonase</th></tr></thead><tbody id="infieldBody"><tr><td colspan="9" class="small">Upload &amp; lock AMANTA untuk melihat Infield.</td></tr></tbody></table></div>
+<div class="perfNote">Ranking diurutkan dari JJG Infield Real paling sedikit. Sumber JJG: PRODUKSIUNIT.JJG berdasarkan KODEUNIT. NPKUTAMA digunakan untuk menghubungkan helper. Langsir tidak menjadi deduction JJG.</div>
+</div></section>
 <section id="people" class="section">
   <div class="top">
     <div>
       <div class="eyebrow">PEOPLE · PREMI</div>
       <div class="title">People Performance</div>
-      <div class="meta">Pemanen Cluster, Performance &amp; Development · mulai September 2026 dan berlanjut.</div>
+      <div class="meta">Pemanen Cluster, Performance &amp; Development · mengikuti Open Book–Closing Book.</div>
     </div>
   </div>
   <div class="panel">
     <div class="peoplePeriodBar">
-      <div><b>Periode aktif:</b> <span id="peoplePeriod">September 2026 onward</span></div>
-      <div class="small">OCYM · Premi harian dihitung dari basis blok yang aktual dipanen</div>
+      <div><b>Periode Book:</b> <span id="peoplePeriod">—</span></div>
+      <div class="small">OCYM · Premi dihitung harian, lalu diakumulasi sesuai periode Book 21–20</div>
     </div>
     <div class="peopleKpis peopleKpisLarge">
       <div class="peopleKpi"><small>TOTAL PEMANEN AKTIF</small><strong id="peopleCount">—</strong></div>
       <div class="peopleKpi"><small>TOTAL JJG TODAY</small><strong id="peopleJjg">—</strong></div>
       <div class="peopleKpi"><small>MORE BASIS TODAY</small><strong id="peopleMore">—</strong></div>
-      <div class="peopleKpi"><small>MORE BASIS MTD</small><strong id="peopleMoreMtd">—</strong></div>
+      <div class="peopleKpi"><small>MORE BASIS PERIODE</small><strong id="peopleMoreMtd">—</strong></div>
       <div class="peopleKpi"><small>PREMI HARI INI</small><strong id="peoplePremi">—</strong></div>
-      <div class="peopleKpi"><small>PREMI MTD</small><strong id="peoplePremiMtd">—</strong></div>
+      <div class="peopleKpi"><small>PREMI PERIODE</small><strong id="peoplePremiMtd">—</strong></div>
     </div>
     <div class="peopleClassGrid">
       <div class="classBox classA"><small>CLASS A</small><strong id="classACount">—</strong><span>≥100% basis</span></div>
@@ -202,23 +232,69 @@ body{background:#f4f7f3}
         <thead>
           <tr>
             <th>Pemanen</th><th>JJG Today</th><th>Basis Blok (Avg)</th><th>More Basis</th>
-            <th>Premi Today</th><th>More Basis MTD</th><th>Premi MTD</th><th>JJG/HK MTD</th><th>Achievement</th><th>Class</th>
+            <th>Premi Today</th><th>More Basis Periode</th><th>Premi Periode</th><th>JJG/HK MTD</th><th>Achievement</th><th>Class</th>
           </tr>
         </thead>
         <tbody id="peopleBody"><tr><td colspan="9" class="small">Belum ada dataset aktif.</td></tr></tbody>
       </table>
     </div>
+    
+    <div class="panel periodClosingPanel" style="margin-top:14px">
+      <div class="periodClosingHead">
+        <div>
+          <div class="eyebrow">BOOK PERIOD · OPEN → CLOSING</div>
+          <h2 style="margin:4px 0 2px">Premi Closing Periode</h2>
+          <div id="peoplePeriodDetail" class="small">Periode Book —</div>
+        </div>
+        <div id="peoplePeriodStatus" class="periodStatus">—</div>
+      </div>
+      <div class="peopleKpis periodKpis">
+        <div class="peopleKpi"><small>OPEN BOOK</small><strong id="peopleOpenBook">—</strong></div>
+        <div class="peopleKpi"><small>CLOSING BOOK</small><strong id="peopleCloseBook">—</strong></div>
+        <div class="peopleKpi"><small>PREMI PERIODE</small><strong id="peoplePeriodPremi">—</strong></div>
+        <div class="peopleKpi"><small>MORE BASIS PERIODE</small><strong id="peoplePeriodMore">—</strong></div>
+      </div>
+      <div class="peopleTableWrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th><th>Pemanen</th><th>JJG Periode</th><th>Hari Panen</th>
+              <th>More Basis Periode</th><th>Premi Periode</th><th>JJG/HK</th>
+            </tr>
+          </thead>
+          <tbody id="peoplePeriodBody">
+            <tr><td colspan="7" class="small">Belum ada dataset periode.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="notice periodLogicNote">
+        <b>Book logic:</b> satu periode selalu dibuka tanggal 21 dan ditutup tanggal 20 bulan berikutnya.
+        Data aktual hanya dihitung sampai tanggal aktif; setelah tanggal 20, periode menjadi <b>Closed</b>.
+        Jadi Book September 2026 = <b>21 Agustus 2026–20 September 2026</b>.
+      </div>
+    </div>
+
     <div class="panel" style="margin-top:14px;background:#f8fbf9">
       <h2 style="margin-bottom:8px">Aturan Premi</h2>
       <div class="notice">
         <b>Hari efektif:</b> Premi = max(0, JJG aktual − Basis Blok) × Rp1.500.<br>
         <b>Minggu:</b> seluruh JJG × Rp2.500, tanpa basis.<br>
-        <b>Basis Blok:</b> rata-rata basis blok yang benar-benar dipanen pada seksi tersebut pada hari itu.<br>
+        <b>Basis Blok:</b> rata-rata basis blok yang benar-benar dipanen oleh pemanen tersebut pada hari itu.<br>
         <b>Catatan:</b> JJG/HK digunakan untuk performance, bukan untuk menghitung premi. Tidak ada premi negatif.
       </div>
     </div>
+
+    <div class="panel" style="margin-top:14px">
+      <div class="panelHead"><h2>KKP Harvest Production Ranking</h2><span>OC PN 1 + OC PN 2 · total JJG</span></div>
+      <div id="kkpProductionSummary" class="notice">Upload &amp; lock AMANTA OCYM untuk menghitung output produksi KKP.</div>
+      <div style="display:flex;justify-content:flex-end;margin:10px 0"><button class="btn" type="button" onclick="downloadKKPProductionCSV()">Download KKP Production CSV</button></div>
+      <div class="peopleTableWrap"><table><thead><tr><th>Rank</th><th>Wilayah</th><th>KKP</th><th>Pemanen</th><th>JJG per Pemanen</th><th>Total JJG</th><th>Status</th></tr></thead><tbody id="kkpProductionBody"><tr><td colspan="7" class="small">Belum ada dataset OCYM aktif.</td></tr></tbody></table></div>
+      <div class="peopleNote"><b>Master KKP:</b> OC PN 1 — KKP 1–3 · OC PN 2 — KKP 1–3. Total 6 KKP / 24 roster pemanen. Produksi diambil dari JJG aktual AMANTA berdasarkan NPK; Agus 05 menggunakan nama sebagai fallback. Ranking berdasarkan total JJG KKP tertinggi → terendah.</div>
+    </div>
   </div>
 </section>
+
+
 
 <section id="ai" class="section">
 <div class="top"><div><div class="eyebrow">ENGINE 08</div><div class="title">AI-Assisted Analysis</div><div class="meta">AI reads the locked dataset, exceptions and evidence. It does not invent unavailable data.</div></div></div>
@@ -302,7 +378,7 @@ function mergeSections(a,b){const out=JSON.parse(JSON.stringify(a));const report
 async function processAMANTA(){const files=[...document.getElementById('amantaFiles').files];if(!files.length)return;const parsed=[];for(const f of files.slice(0,2))parsed.push({name:f.name,sections:parseCSV(await f.text()),size:f.size});const metas=parsed.map(x=>detectMeta(x.sections));const dates=[...new Set(metas.map(x=>x.date).filter(Boolean))];const unresolved=metas.map((m,i)=>m.date?null:`File ${i+1}: tanggal tidak terdeteksi`).filter(Boolean);const inconsistent=metas.some(m=>m.dates.length>1);const sites=[...new Set(parsed.map(x=>secGet(x.sections,'PRODUKSIBLOK','SITECODE').find(Boolean)).filter(Boolean))];if(unresolved.length||dates.length!==1||inconsistent){const detail=metas.map((m,i)=>`File ${i+1}: ${m.dates.length?m.dates.join(', '):'UNAVAILABLE'}`).join(' · ');document.getElementById('reconBox').innerHTML='<b>BLOCKED:</b> tanggal antar file tidak sama/tidak terdeteksi. '+html.escape(detail);return}let merged=parsed[0].sections,report=[];if(parsed[1]){const m=mergeSections(merged,parsed[1].sections);merged=m.sections;report=m.report}else{report=Object.entries(merged).map(([k,v])=>({section:k,file1:v.rows.length,file2:0,duplicates:0,final:v.rows.length}))}STAGED={date:dates[0],site:sites[0]||'—',version:'3.2.8.9',files:parsed.map(x=>x.name),sections:merged,recon:report,processedAt:new Date().toISOString()};document.getElementById('uploadMsg').innerHTML='<b>Parsed:</b> '+parsed.length+' file(s) · '+html.escape(parsed.map(x=>x.name).join(' + '));const dup=report.reduce((a,x)=>a+x.duplicates,0),raw=parsed.reduce((a,x)=>a+Object.values(x.sections).reduce((n,s)=>n+s.rows.length,0),0),fin=Object.values(merged).reduce((n,s)=>n+s.rows.length,0);document.getElementById('reconBox').innerHTML=`<b>READY TO CLOSE</b><br>Tanggal: <b>${fmtDate(STAGED.date)}</b> · Site: ${html.escape(STAGED.site)} · ${parsed.length} file<br>Raw rows: ${raw.toLocaleString()} · Duplicate rows removed: ${dup.toLocaleString()} · Final reconciled rows: ${fin.toLocaleString()}<br><span class="small">Identical rows are deduplicated; records are not blindly summed across files.</span>`;document.getElementById('lockBtn').disabled=false;renderStagedPreview(STAGED)}
 function fmtDate(iso){if(!iso)return 'No dataset';const d=new Date(iso+'T00:00:00');return isNaN(d)?iso:d.toLocaleDateString('en-GB',{day:'2-digit',month:'long',year:'numeric'})}
 function lockKey(date){return 'adriana_daily_'+date}
-function closeDataset(){if(!STAGED)return;const existing=JSON.parse(localStorage.getItem(lockKey(STAGED.date))||'null');const closingId=existing?.closingId||('CLOSE-'+STAGED.date);const snap={...STAGED,closingId,status:'LOCKED',lockedAt:new Date().toISOString(),versionNumber:existing?.versionNumber||1};localStorage.setItem(lockKey(STAGED.date),JSON.stringify(snap));let dates=JSON.parse(localStorage.getItem('adriana_daily_index')||'[]');if(!dates.includes(STAGED.date))dates.push(STAGED.date);dates.sort().reverse();localStorage.setItem('adriana_daily_index',JSON.stringify(dates));ACTIVE=snap;window.ADRIANA_DATA=buildData(snap);renderAll(ACTIVE);document.getElementById('lockState').textContent='● DATA LOCKED · VALIDATED';document.getElementById('uploadMsg').innerHTML+='<br><b>LOCKED:</b> '+fmtDate(snap.date)+' · '+snap.closingId;renderHistory();alert('Dataset '+fmtDate(snap.date)+' berhasil di-CLOSE & LOCK.');}
+function legacyCloseDataset(){if(!STAGED)return;const existing=JSON.parse(localStorage.getItem(lockKey(STAGED.date))||'null');const closingId=existing?.closingId||('CLOSE-'+STAGED.date);const snap={...STAGED,closingId,status:'LOCKED',lockedAt:new Date().toISOString(),versionNumber:existing?.versionNumber||1};localStorage.setItem(lockKey(STAGED.date),JSON.stringify(snap));let dates=JSON.parse(localStorage.getItem('adriana_daily_index')||'[]');if(!dates.includes(STAGED.date))dates.push(STAGED.date);dates.sort().reverse();localStorage.setItem('adriana_daily_index',JSON.stringify(dates));ACTIVE=snap;window.ADRIANA_DATA=buildData(snap);renderAll(ACTIVE);document.getElementById('lockState').textContent='● DATA LOCKED · VALIDATED';document.getElementById('uploadMsg').innerHTML+='<br><b>LOCKED:</b> '+fmtDate(snap.date)+' · '+snap.closingId;renderHistory();alert('Dataset '+fmtDate(snap.date)+' berhasil di-CLOSE & LOCK.');}
 function buildData(snap){const sections=snap.sections,prod=sections.PRODUKSIBLOK;let jjg=0;const npks=new Set(),mand=new Set(),blocks={};if(prod){const h=prod.header,ji=h.indexOf('JJG'),ni=h.indexOf('NPK'),mi=h.indexOf('KEMANDORAN'),bi=h.indexOf('BLOK');prod.rows.forEach(r=>{jjg+=num(r[ji]);if(r[ni])npks.add(r[ni]);if(r[mi])mand.add(r[mi]);const b=r[bi]||'—';blocks[b]=(blocks[b]||0)+num(r[ji])})}let net=0,trips=0;const tr=sections.TR_TBS_TRANSPORT;if(tr){const wi=tr.header.indexOf('WEIGHTIN'),wo=tr.header.indexOf('WEIGHTOUT');tr.rows.forEach(r=>{const x=num(r[wi])-num(r[wo]);if(x>0){net+=x;trips++}})}const harvesters={};if(prod){const h=prod.header,ji=h.indexOf('JJG'),ni=h.indexOf('NPK'),namei=h.indexOf('NAMA'),mi=h.indexOf('KEMANDORAN'),bi=h.indexOf('BLOK');prod.rows.forEach(r=>{const npk=cleanCell(r[ni]);if(npk==='—')return;const name=cleanCell(r[namei]);const key=npk;harvesters[key]??={npk,name,j:0,blocks:new Set(),mandorans:new Set()};harvesters[key].j+=num(r[ji]);const b=cleanCell(r[bi]),m=cleanCell(r[mi]);if(b!=='—')harvesters[key].blocks.add(b);if(m!=='—')harvesters[key].mandorans.add(m)});}const bjrKgPerJjg=jjg>0&&net>0?net/jjg:null;return {...snap,jjg,producingHK:npks.size,mandorans:[...mand],blocks,netTransportKg:net,trips,bjrKgPerJjg,harvesters:Object.values(harvesters).map(x=>({...x,blocks:[...x.blocks],mandorans:[...x.mandorans],jjgPerHK:x.j}))}}
 function renderStagedPreview(s){const vals=document.querySelectorAll('#dashboard .card .value');vals[0].textContent='—';vals[1].textContent='—';vals[2].textContent='—';}
 function renderAll(snap){const d=buildData(snap);ACTIVE=snap;window.ADRIANA_DATA=d;document.getElementById('activeDate').textContent=fmtDate(snap.date);document.getElementById('activeMeta').textContent=`${snap.site} · AMANTA v${snap.version} · ${snap.files.length} file(s) · ${snap.closingId}`;document.getElementById('lockState').textContent='● DATA LOCKED · VALIDATED';const vals=document.querySelectorAll('#dashboard .card .value');vals[0].textContent=d.jjg.toLocaleString();vals[1].textContent=d.producingHK.toLocaleString();vals[2].textContent=d.netTransportKg?(d.netTransportKg/1000).toFixed(2)+' T':'—';vals[3].textContent=d.bjrKgPerJjg?d.bjrKgPerJjg.toFixed(2)+' kg/JJG':'—';const bjrNotice=document.getElementById('bjrNotice');if(bjrNotice)bjrNotice.innerHTML=d.bjrKgPerJjg?`<b>BJR:</b> ${d.bjrKgPerJjg.toFixed(2)} kg/JJG · ${d.netTransportKg.toLocaleString()} kg net ÷ ${d.jjg.toLocaleString()} JJG`:'<b>BJR:</b> unavailable because net transport or JJG is unavailable.';const donut=document.getElementById('donutTotal');if(donut)donut.textContent=d.jjg.toLocaleString();renderProduction(d);renderQuality(d);renderTransport(d);renderRotation(d);renderDashboard(d);buildExceptions(d);renderAI(d);renderPDCA(d);renderHistory();renderEvaluationState(d)}
@@ -358,7 +434,7 @@ function renderJJGContribution(d){
  const legend=document.querySelector('.contributionPanel .legend');if(legend)legend.innerHTML=blocks.map(([b,j])=>`<div><i></i>${html.escape(b)} <b>${total?(Number(j)/total*100).toFixed(1):'0.0'}%</b></div>`).join('')||'<div>Data unavailable</div>';
 }
 function renderQuality(d){const q=d.sections.SAMPLING_KUALITAS_PANEN;if(!q){document.getElementById('qualityBody').innerHTML='<tr><td colspan="5">Quality data unavailable.</td></tr>';return}const h=q.header,bi=h.indexOf('BLOK'),mi=h.indexOf('MANDORAN'),si=h.indexOf('SAMPLEPOKOK'),pi=h.indexOf('PIRINGANTDKSTDR'),fi=h.indexOf('BUAHTINGGAL');document.getElementById('qualityBody').innerHTML=q.rows.map(r=>`<tr><td>${html.escape(r[bi]||'—')}</td><td>${html.escape(r[mi]||'—')}</td><td>${r[si]||0}</td><td>${r[pi]||0}</td><td>${r[fi]||0}</td></tr>`).join('')||'<tr><td colspan="5">No quality sample.</td></tr>'}
-function parseAmantaDateTime(value){const x=String(value??'').trim();if(!x||/^null$/i.test(x)||/^undefined$/i.test(x))return null;let m=x.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})[ T]+(\d{1,2}):(\d{2})(?::(\d{2}))?/);if(m){const dt=new Date(Number(m[3]),Number(m[2])-1,Number(m[1]),Number(m[4]),Number(m[5]),Number(m[6]||0));return isNaN(dt)?null:dt}return null}
+function parseAmantaDateTime(value){const x=String(value??'').trim();if(!x||/^null$/i.test(x)||/^undefined$/i.test(x))return null;let m=x.match(/^(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})[ T]+(\d{1,2}):(\d{2})(?::(\d{2}))?/);if(m){const dt=new Date(Number(m[1]),Number(m[2])-1,Number(m[3]),Number(m[4]),Number(m[5]),Number(m[6]||0));return isNaN(dt)?null:dt}m=x.match(/^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})[ T]+(\d{1,2}):(\d{2})(?::(\d{2}))?/);if(m){const dt=new Date(Number(m[3]),Number(m[2])-1,Number(m[1]),Number(m[4]),Number(m[5]),Number(m[6]||0));return isNaN(dt)?null:dt}return null}
 function cleanCell(v){const x=String(v??'').trim();return (!x||/^null$/i.test(x)||/^undefined$/i.test(x))?'—':x}
 function getLockedSnapshots(){const idx=JSON.parse(localStorage.getItem('adriana_daily_index')||'[]');return idx.map(date=>JSON.parse(localStorage.getItem(lockKey(date))||'null')).filter(Boolean).sort((a,b)=>String(a.date).localeCompare(String(b.date)));}
 function harvestHistoryFromSnapshots(){const snaps=getLockedSnapshots();const map={};for(const snap of snaps){const p=snap.sections?.PRODUKSIBLOK;if(!p)continue;const h=p.header||[],bi=h.indexOf('BLOK'),hi=h.indexOf('HARVDATE');if(bi<0||hi<0)continue;for(const r of p.rows||[]){const block=cleanCell(r[bi]);const date=normalizeAmantaDate(r[hi]);if(block==='—'||!date)continue;(map[block]??=new Set()).add(date);}}return Object.fromEntries(Object.entries(map).map(([b,set])=>[b,[...set].sort()]));}
@@ -388,27 +464,82 @@ function rotationSection(block,afd=ACTIVE_AFD){
  for(const [sec,blocks] of Object.entries(rotationSectionsForAfd(afd))){if(blocks.includes(key))return sec;}
  return null;
 }
-function harvestHistoryFromSnapshots(afd=ACTIVE_AFD){
- const snaps=getLockedSnapshots().filter(x=>!afd||afd==='ALL'||x.afd===afd);
+const ROTATION_START_DATE='2026-08-18';
+let ROTATION_VIEW_MONTH=localStorage.getItem('adriana_rotation_view_month')||'';
+function rotationMonthKey(date){return String(date||'').slice(0,7);}
+function rotationMonthStart(key){const [y,m]=String(key).split('-').map(Number);return new Date(y,m-1,1);}
+function rotationMonthEnd(key){const [y,m]=String(key).split('-').map(Number);return new Date(y,m,0);}
+function rotationDateISO(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
+function rotationAddMonths(key,n){const d=rotationMonthStart(key);d.setMonth(d.getMonth()+n);return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;}
+function rotationMonthLabel(key){const d=rotationMonthStart(key);return d.toLocaleDateString('id-ID',{month:'long',year:'numeric'});}
+function rotationDatesForView(activeDate){
+ const activeKey=rotationMonthKey(activeDate);
+ let key=ROTATION_VIEW_MONTH||activeKey;
+ if(key>activeKey) key=activeKey;
+ if(key<'2026-08') key='2026-08';
+ ROTATION_VIEW_MONTH=key;
+ localStorage.setItem('adriana_rotation_view_month',key);
+ const start=rotationMonthStart(key),end=rotationMonthEnd(key);
+ let from=rotationDateISO(start),to=rotationDateISO(end);
+ if(key==='2026-08') from=ROTATION_START_DATE;
+ if(key===activeKey) to=activeDate;
+ if(from>to) return [];
+ const out=[];for(let d=new Date(from+'T00:00:00');rotationDateISO(d)<=to;d.setDate(d.getDate()+1)) out.push(rotationDateISO(d));
+ return out;
+}
+function rotationVisibleSnapshots(afd,activeDate){
+ // Rotation follows the same continuity principle as Premi: use all locked daily
+ // snapshots from 18 Aug onward, and always include the current Daily Operational
+ // View snapshot even when that latest date has not yet been locked.
+ let snaps=[];
+ try{if(typeof getAfdSnapshotsHybrid==='function') snaps=getAfdSnapshotsHybrid(afd||'OC')||[];}catch(e){}
+ if(!snaps.length){try{snaps=getLockedSnapshots()||[];}catch(e){}}
+ const current=window.ADRIANA_DATA||ACTIVE;
+ if(current?.date){
+   const a=current.afd||afd||'OC';
+   if(current.date>=ROTATION_START_DATE&&current.date<=String(activeDate||current.date) && (!afd||afd==='ALL'||a===afd)){
+     snaps=[...snaps,current];
+   }
+ }
+ const byDate=new Map();
+ (snaps||[]).forEach(x=>{
+   if(!x?.date||x.date<ROTATION_START_DATE||x.date>String(activeDate||'9999-12-31'))return;
+   if(afd&&afd!=='ALL'&&(x.afd||'OC')!==afd)return;
+   byDate.set(`${x.afd||afd||'OC'}|${x.date}`,x);
+ });
+ return [...byDate.values()].sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+}
+function harvestHistoryFromSnapshots(afd=ACTIVE_AFD,activeDate=null){
+ const snaps=rotationVisibleSnapshots(afd,activeDate||'9999-12-31');
  const map={};
  for(const snap of snaps){
   const p=snap.sections?.PRODUKSIBLOK;if(!p)continue;
   const h=p.header||[],bi=h.indexOf('BLOK'),hi=h.indexOf('HARVDATE');if(bi<0||hi<0)continue;
   for(const r of p.rows||[]){
    const block=normalizeRotationBlock(r[bi],afd),date=normalizeAmantaDate(r[hi]);
-   if(!block||!date)continue;(map[block]??=new Set()).add(date);
+   if(!block||!date||date<ROTATION_START_DATE||date>String(activeDate||'9999-12-31'))continue;
+   (map[block]??=new Set()).add(date);
   }
  }
  return Object.fromEntries(Object.entries(map).map(([b,set])=>[b,[...set].sort()]));
 }
+function renderRotationMonth(offset){
+ const d=window.ADRIANA_DATA;if(!d?.date)return;
+ const activeKey=rotationMonthKey(d.date);
+ let current=ROTATION_VIEW_MONTH||activeKey;
+ const next=rotationAddMonths(current,offset);
+ if(next<'2026-08'||next>activeKey)return;
+ ROTATION_VIEW_MONTH=next;localStorage.setItem('adriana_rotation_view_month',next);renderRotation(d);
+}
 function renderRotation(d){
  const host=document.getElementById('rotationResult');if(!host)return;
  const afd=ACTIVE_AFD==='ALL'?(d?.afd||'OC'):ACTIVE_AFD;
- const hist=harvestHistoryFromSnapshots(afd),activeDate=d?.date;
- if(!activeDate){host.innerHTML='<b>Active report date unavailable.</b>';return;}
- const locked=getLockedSnapshots(afd).filter(x=>x.date<=activeDate);
- const date0=new Date(activeDate+'T00:00:00'),y=date0.getFullYear(),m=date0.getMonth();
- const daysInMonth=new Date(y,m+1,0).getDate(),dates=Array.from({length:daysInMonth},(_,i)=>`${y}-${String(m+1).padStart(2,'0')}-${String(i+1).padStart(2,'0')}`);
+ const activeDate=d?.date;if(!activeDate){host.innerHTML='<b>Active report date unavailable.</b>';return;}
+ const hist=harvestHistoryFromSnapshots(afd,activeDate);
+ const locked=rotationVisibleSnapshots(afd,activeDate);
+ const dates=rotationDatesForView(activeDate);
+ const viewMonth=ROTATION_VIEW_MONTH||rotationMonthKey(activeDate);
+
  const sections=rotationSectionsForAfd(afd),prefix=afd==='OE'?'OE':'OC',allBlocks=new Set(Object.keys(hist)),rows=[];
  for(const [sec,blocks] of Object.entries(sections)){for(const key of blocks){const block=prefix+key;allBlocks.add(block);rows.push({sec,block,dates:hist[block]||[]});}}
  const extra=[...allBlocks].filter(b=>!rotationSection(b,afd)).sort();
@@ -426,12 +557,12 @@ function renderRotation(d){
  }).join('');
  const cell=(ds,date)=>{const prior=ds.filter(x=>x<=date);if(!prior.length)return '<span class="rotDash">—</span>';const last=prior[prior.length-1],age=Math.max(0,daysBetween(last,date)),st=rotationStatus(age),isHarvest=last===date;return `<span class="rotCell ${st.cls}${isHarvest?' harvested':''}" title="${isHarvest?'Harvest '+fmtDate(date):'Last harvest '+fmtDate(last)+' · '+age+' days'}">${age}</span>`};
  let matrixBody='',lastSec=null;
- activeRows.forEach(r=>{if(r.sec!==lastSec){matrixBody+=`<tr class="secRow"><td colspan="${2+dates.length}"><b>SEKSI ${html.escape(r.sec)}</b></td></tr>`;lastSec=r.sec;}matrixBody+=`<tr><td><b>${html.escape(r.block)}</b></td><td>${afd}YM</td>${dates.map(dt=>`<td>${cell(r.dates,dt)}</td>`).join('')}</tr>`});
+ activeRows.forEach(r=>{if(r.sec!==lastSec){matrixBody+=`<tr class="secRow"><td colspan="${1+dates.length}"><b>SEKSI ${html.escape(r.sec)}</b></td></tr>`;lastSec=r.sec;}matrixBody+=`<tr><td><b>${html.escape(r.block)}</b></td>${dates.map(dt=>`<td>${cell(r.dates,dt)}</td>`).join('')}</tr>`});
  const headers=dates.map((dt,i)=>`<th>${i+1}</th>`).join('');
- host.innerHTML=`<div class="rotationMatrixWrap"><div class="rotationMatrixHead"><div><b>HARVEST ROTATION — ${afd}YM</b><br><span class="small">${locked.length} locked date(s) · Active date ${fmtDate(activeDate)} · Source: AMANTA BLOK + HARVDATE</span></div><div class="small">Today-first view</div></div>
+ host.innerHTML=`<div class="rotationMatrixWrap"><div class="rotationMatrixHead"><div><b>HARVEST ROTATION — ${afd}YM</b><br><span class="small">AMANTA sync ${fmtDate(ROTATION_START_DATE)} → ${fmtDate(activeDate)} · ${locked.length} locked date(s) · Source: AMANTA BLOK + HARVDATE</span></div><div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap"><button class="btn" type="button" style="margin-top:0" onclick="renderRotationMonth(-1)" ${viewMonth<='2026-08'?'disabled':''}>‹</button><span class="small" style="min-width:130px;text-align:center"><b>${html.escape(rotationMonthLabel(viewMonth))}</b></span><button class="btn" type="button" style="margin-top:0" onclick="renderRotationMonth(1)" ${viewMonth>=rotationMonthKey(activeDate)?'disabled':''}>›</button></div></div>
  <div class="rotationMetaCompact"><span class="tag green">≤7 · ${summary.Hijau}</span><span class="tag yellow">8–10 · ${summary.Kuning}</span><span class="tag red">11–15 · ${summary.Merah}</span><span class="tag black">≥16 · ${summary.Hitam}</span>${summary.Unavailable?`<span class="tag">Unavailable · ${summary.Unavailable}</span>`:''}</div>
  <div class="rotationToday"><div class="rotationTodayHead"><b>ROTATION TODAY</b><span class="small">Last harvest → current age</span></div><div style="overflow:auto"><table class="rotationTodayTable"><thead><tr><th>BLOCK</th><th>LAST HARVEST</th><th>AGE</th><th>STATUS</th></tr></thead><tbody>${todayBody}</tbody></table></div></div>
- <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin:12px 0 8px;flex-wrap:wrap"><button class="btn" type="button" onclick="downloadRotationCalendarCSV()">Download Rotation Calendar CSV</button></div><details class="rotationMatrixDetails"><summary>View full ${html.escape(afd)}YM rotation calendar</summary><div class="rotationMatrixWrap"><div class="rotationMatrixHead"><div><b>HARVEST ROTATION MATRIX — ${afd}YM</b></div><div class="small">Harvest date = 0 · Age increases daily</div></div><div class="rotationLegend"><span class="tag green">≤7 Hijau</span><span class="tag yellow">8–10 Kuning</span><span class="tag red">11–15 Merah</span><span class="tag black">≥16 Hitam</span></div><div style="overflow:auto;margin-top:10px"><table class="rotationMatrix"><thead><tr><th>BLOCK</th><th>AFD</th>${headers}</tr></thead><tbody>${matrixBody}</tbody></table></div></div></details>
+ <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin:12px 0 8px;flex-wrap:wrap"><button class="btn" type="button" onclick="downloadRotationCalendarCSV()">Download Rotation Calendar CSV</button></div><details class="rotationMatrixDetails"><summary>View full ${html.escape(afd)}YM rotation calendar</summary><div class="rotationMatrixWrap"><div class="rotationMatrixHead"><div><b>HARVEST ROTATION MATRIX — ${afd}YM</b></div><div class="small">Harvest date = 0 · Age increases daily</div></div><div class="rotationLegend"><span class="tag green">≤7 Hijau</span><span class="tag yellow">8–10 Kuning</span><span class="tag red">11–15 Merah</span><span class="tag black">≥16 Hitam</span></div><div class="rotationMatrixScroller"><table class="rotationMatrix"><thead><tr><th>BLOCK</th>${headers}</tr></thead><tbody>${matrixBody}</tbody></table></div></div></details>
  <div class="small" style="margin-top:10px">Urutan Seksi/Block mengikuti master Rotation SYM. Nilai dihitung dari histori panen AMANTA yang sudah di-CLOSE &amp; LOCK; jika histori belum tersedia, ditampilkan sebagai —.</div></div>`;
 }
 function csvEscape(v){const x=String(v??'');return /[",\n\r]/.test(x)?'"'+x.replace(/"/g,'""')+'"':x;}
@@ -471,17 +602,17 @@ function downloadRotationCalendarCSV(){
  if(!ACTIVE||!window.ADRIANA_DATA){alert('Belum ada dataset aktif.');return;}
  const d=window.ADRIANA_DATA,afd=ACTIVE_AFD==='ALL'?(d?.afd||'OC'):ACTIVE_AFD,activeDate=d?.date||ACTIVE.date;
  if(!activeDate){alert('Tanggal aktif belum tersedia.');return;}
- const hist=harvestHistoryFromSnapshots(afd),sections=rotationSectionsForAfd(afd),prefix=afd==='OE'?'OE':'OC';
- const date0=new Date(activeDate+'T00:00:00'),y=date0.getFullYear(),m=date0.getMonth();
- const daysInMonth=new Date(y,m+1,0).getDate(),dates=Array.from({length:daysInMonth},(_,i)=>`${y}-${String(m+1).padStart(2,'0')}-${String(i+1).padStart(2,'0')}`);
+ const hist=harvestHistoryFromSnapshots(afd,activeDate),sections=rotationSectionsForAfd(afd),prefix=afd==='OE'?'OE':'OC';
+ const dates=rotationDatesForView(activeDate);
+ const y=Number(String(dates[0]||activeDate).slice(0,4)),m=Number(String(dates[0]||activeDate).slice(5,7));
  const rows=[];
  for(const [sec,blocks] of Object.entries(sections)) for(const key of blocks) rows.push({sec,block:prefix+key,dates:hist[prefix+key]||[]});
  const all=new Set(Object.keys(hist));[...all].filter(b=>!rotationSection(b,afd)).sort().forEach(block=>rows.push({sec:'Other',block,dates:hist[block]||[]}));
- const out=[['AFD',afd,'Month',`${y}-${String(m+1).padStart(2,'0')}`],[],['Seksi','Block','AFD',...dates]];
- rows.forEach(r=>{out.push([r.sec,r.block,afd,...dates.map(dt=>{const prior=r.dates.filter(x=>x<=dt);if(!prior.length)return '';return Math.max(0,daysBetween(prior[prior.length-1],dt));})]);});
+ const out=[['AFD',afd,'Month',ROTATION_VIEW_MONTH],[],['Seksi','Block',...dates]];
+ rows.forEach(r=>{out.push([r.sec,r.block,...dates.map(dt=>{const prior=r.dates.filter(x=>x<=dt);if(!prior.length)return '';return Math.max(0,daysBetween(prior[prior.length-1],dt));})]);});
  downloadCSV(`ADRIANA_Rotation_Calendar_${afd}_${y}-${String(m+1).padStart(2,'0')}.csv`,out);
 }
-function renderTransport(d){const tr=d.sections.TR_TBS_TRANSPORT;if(!tr){document.getElementById('transportBody').innerHTML='<tr><td colspan="7">Transport data unavailable.</td></tr>';return}const h=tr.header,ri=h.indexOf('RITNUMBER'),wi=h.indexOf('WEIGHTIN'),wo=h.indexOf('WEIGHTOUT'),ready=h.indexOf('TBSREADY'),go=h.indexOf('DT_GO'),kb=h.indexOf('KABNUMBER');const groups={};tr.rows.forEach((r,i)=>{const kab=kb>=0?cleanCell(r[kb]):'—';(groups[kab]??=[]).push({r,i})});let rows=[];Object.entries(groups).forEach(([kab,items])=>items.forEach(({r,i})=>{const rawIn=cleanCell(r[wi]),rawOut=cleanCell(r[wo]);const a=parseFloat(rawIn.replace(/,/g,'')),b=parseFloat(rawOut.replace(/,/g,''));const net=Number.isFinite(a)&&Number.isFinite(b)?a-b:null;const av=parseAmantaDateTime(r[ready]),bv=parseAmantaDateTime(r[go]);let duration='—',readyTime='—',goTime='—';if(av)readyTime=av.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});if(bv)goTime=bv.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});if(av&&bv&&bv>=av)duration=Math.round((bv-av)/60000)+' min';const rit=cleanCell(r[ri]);rows.push(`<tr><td><b>${html.escape(kab)}</b></td><td><b>Rit ${html.escape(rit==='—'?String(i+1):rit)}</b></td><td class="small">${readyTime} → ${goTime}</td><td>${html.escape(rawIn)}</td><td>${html.escape(rawOut)}</td><td>${net!==null&&net>0?net.toLocaleString():'—'}</td><td><b>${duration}</b></td></tr>`)}));document.getElementById('transportBody').innerHTML=rows.join('')||'<tr><td colspan="7">No transport data.</td></tr>';document.getElementById('restanNotice').innerHTML='<b>Restan:</b> unavailable unless an explicit confirmed field exists in the active AMANTA dataset. <b>BJR:</b> calculated automatically from net TBS weight (kg) ÷ JJG.'}
+function renderTransport(d){const tr=d.sections.TR_TBS_TRANSPORT;if(!tr){document.getElementById('transportBody').innerHTML='<tr><td colspan="7">Transport data unavailable.</td></tr>';return}const h=tr.header,ri=h.indexOf('RITNUMBER'),wi=h.indexOf('WEIGHTIN'),wo=h.indexOf('WEIGHTOUT'),ready=h.indexOf('DTREADY'),go=h.indexOf('DT_GO'),kb=h.indexOf('KABNUMBER');const groups={};tr.rows.forEach((r,i)=>{const kab=kb>=0?cleanCell(r[kb]):'—';(groups[kab]??=[]).push({r,i})});let rows=[];Object.entries(groups).forEach(([kab,items])=>items.forEach(({r,i})=>{const rawIn=cleanCell(r[wi]),rawOut=cleanCell(r[wo]);const a=parseFloat(rawIn.replace(/,/g,'')),b=parseFloat(rawOut.replace(/,/g,''));const net=Number.isFinite(a)&&Number.isFinite(b)?a-b:null;const av=parseAmantaDateTime(r[ready]),bv=parseAmantaDateTime(r[go]);let duration='—',readyTime='—',goTime='—';if(av)readyTime=av.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});if(bv)goTime=bv.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit'});if(av&&bv&&bv>=av)duration=Math.round((bv-av)/60000)+' min';const rit=cleanCell(r[ri]);rows.push(`<tr><td><b>${html.escape(kab)}</b></td><td><b>Rit ${html.escape(rit==='—'?String(i+1):rit)}</b></td><td class="small">${readyTime} → ${goTime}</td><td>${html.escape(rawIn)}</td><td>${html.escape(rawOut)}</td><td>${net!==null&&net>0?net.toLocaleString():'—'}</td><td><b>${duration}</b></td></tr>`)}));document.getElementById('transportBody').innerHTML=rows.join('')||'<tr><td colspan="7">No transport data.</td></tr>';document.getElementById('restanNotice').innerHTML='<b>Restan:</b> unavailable unless an explicit confirmed field exists in the active AMANTA dataset. <b>BJR:</b> calculated automatically from net TBS weight (kg) ÷ JJG.'}
 function renderDashboard(d){const blocks=Object.entries(d.blocks).sort((a,b)=>b[1]-a[1]);const ranked=attentionRank(d),focus=ranked[0]?.b||null,focusSet=new Set(ranked.slice(0,2).map(x=>x.b));document.querySelector('#dashboard table tbody').innerHTML=blocks.map(([b,j])=>{const review=b===focus?'<span class="tag">INVESTIGATE</span>':(focusSet.has(b)?'Watch':'Monitor');return `<tr><td><b>${html.escape(b)}</b></td><td>${j.toLocaleString()}</td><td>${d.jjg?((j/d.jjg)*100).toFixed(1):0}%</td><td>${review}</td></tr>`}).join('')||'<tr><td colspan="4">No production data.</td></tr>';const sig=[];if(blocks[0]&&d.jjg&&blocks[0][1]/d.jjg>=.35)sig.push(`Dominant block: <b>${html.escape(blocks[0][0])}</b> · ${blocks[0][1].toLocaleString()} JJG · ${(blocks[0][1]/d.jjg*100).toFixed(1)}%`);if(d.byMandoran?.OCPN1&&d.byMandoran?.OCPN2){const a=d.byMandoran.OCPN1.j/d.byMandoran.OCPN1.n.size,b=d.byMandoran.OCPN2.j/d.byMandoran.OCPN2.n.size;if(Math.abs(a-b)/Math.min(a,b)>=.3)sig.push(`Mandoran gap: OCPN1 ${a.toFixed(2)} vs OCPN2 ${b.toFixed(2)} JJG/HK — investigate context.`)}const q=d.sections.SAMPLING_KUALITAS_PANEN;if(q){const h=q.header,pi=h.indexOf('PIRINGANTDKSTDR');const n=q.rows.reduce((a,r)=>a+num(r[pi]),0);if(n)sig.push(`Quality evidence: ${n} non-standard circle(s) recorded in sampling.`)}const sic=d.sections.TR_SIC_MP;if(sic){const h=sic.header,si=h.indexOf('STATUS'),ys=sic.rows.filter(r=>String(r[si]).toUpperCase()==='Y').length,ns=sic.rows.length-ys;sig.push(`SIC recorded: ${ys} Y / ${ns} N — denominator definition still pending.`)}document.getElementById('dashboardSignals').innerHTML=sig.map((x,i)=>`<div class="signal"><div class="num">0${i+1}</div><div><b>${x}</b></div></div>`).join('')||'<div class="notice">No operational signal available.</div>';document.getElementById('dashboardDecision').textContent='Investigate '+(focus||'Review dataset');document.getElementById('dashboardDecisionText').textContent='Validate low production against harvest quality and field evidence.'} 
 
 function buildExceptions(d){const ex=[],add=(p,o,s,e,a)=>ex.push({priority:p,obj:o,signal:s,evidence:e,action:a});const be=Object.entries(d.blocks).sort((a,b)=>b[1]-a[1]);if(be[0]&&d.jjg&&be[0][1]/d.jjg>=.35)add('P2',be[0][0],'Dominant production concentration',`${be[0][1].toLocaleString()} JJG · ${(be[0][1]/d.jjg*100).toFixed(1)}%`,'Compare rotation, harvest area and field condition.');if(d.byMandoran?.OCPN1&&d.byMandoran?.OCPN2){const a=d.byMandoran.OCPN1.j/d.byMandoran.OCPN1.n.size,b=d.byMandoran.OCPN2.j/d.byMandoran.OCPN2.n.size;if(Math.abs(a-b)/Math.min(a,b)>=.3)add('P1','Mandoran','Material productivity gap',`OCPN1 ${a.toFixed(2)} vs OCPN2 ${b.toFixed(2)} JJG/HK`,'Verify operational context.') }const q=d.sections.SAMPLING_KUALITAS_PANEN;if(q){const h=q.header,pi=h.indexOf('PIRINGANTDKSTDR'),si=h.indexOf('SAMPLEPOKOK'),bi=h.indexOf('BLOK');q.rows.forEach(r=>{const n=num(r[pi]);if(n)add(n>=5?'P2':'P3',r[bi]||'—','Non-standard harvest quality sample',`${n} in sample ${r[si]||0} pokok`,'Recheck field execution.')})}add('DATA GAP','Restan','Confirmed restan value not identified','Restan unavailable','Define official source/formula.');const rank={P1:1,P2:2,P3:3,'DATA GAP':4};ex.sort((a,b)=>rank[a.priority]-rank[b.priority]);const c={P1:0,P2:0,P3:0,'DATA GAP':0};ex.forEach(x=>c[x.priority]++);['P1','P2','P3'].forEach(k=>document.getElementById(k.toLowerCase()).textContent=c[k]);document.getElementById('dg').textContent=c['DATA GAP'];document.getElementById('exceptionBody').innerHTML=ex.map(x=>`<tr><td><span class="tag ${x.priority==='P1'?'low':x.priority==='P2'?'medium':''}">${x.priority}</span></td><td><b>${html.escape(x.obj)}</b></td><td>${html.escape(x.signal)}</td><td>${html.escape(x.evidence)}</td><td>${html.escape(x.action)}</td></tr>`).join('');window.ADRIANA_EXCEPTIONS=ex}
@@ -491,7 +622,7 @@ function saveDecision(){if(!ACTIVE){document.getElementById('decisionMsg').textC
 function nextDate(d){const x=new Date(d+'T00:00:00');x.setDate(x.getDate()+1);return x.toISOString().slice(0,10)}
 function renderDecisionHistory(){const el=document.getElementById('decisionHistory');if(!el)return;const h=JSON.parse(localStorage.getItem('adriana_decisions')||'[]').filter(x=>!x.afd||ACTIVE_AFD==='ALL'||x.afd===ACTIVE_AFD);el.innerHTML=h.length?'<h2>Decision History</h2>'+h.map(x=>`<div class="notice" style="margin-top:8px"><b>${fmtDate(x.date)} · ${html.escape(x.decision)}</b><br>${html.escape(x.action)}<br><span class="small">Closing: ${html.escape(x.closingId)} · H+1: ${fmtDate(x.nextCheck)}</span></div>`).join(''):'<div class="small">Belum ada decision.</div>'}
 function renderPDCA(d){const top=attentionRank(d)[0];document.getElementById('pdcaIssue').textContent=top?top.b+' gap':'—';document.getElementById('pdcaIssueSub').textContent=top?'low production + quality/inspection cross-check':'No active signal'}
-function renderHistory(){
+function legacyRenderHistory(){
  const idx=getAfdSnapshotsHybrid(ACTIVE_AFD==='ALL'?'':ACTIVE_AFD),host=document.getElementById('evalHistory');if(!host)return;
  const rows=idx.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(s=>`<div class="notice" style="margin-top:8px"><b>${fmtDate(s.date)}</b> · ${html.escape(s.closingId)} · ${html.escape(AFD_LABEL[s.afd]||s.afd||'—')}<br>${Number(s.jjg||0).toLocaleString()} JJG · ${s.producingHK||0} HK · ${s.files?.length||0} AMANTA file(s)<br><button class="btn" onclick="loadDate('${s.date}','${s.afd||''}')">LOAD THIS DATE</button></div>`).join('');
  host.innerHTML='<h2>Daily Closing History</h2>'+(rows||'<div class="small">Belum ada closing.</div>');renderDecisionHistory();
@@ -552,16 +683,28 @@ function closeDataset(){
  ACTIVE=snap;STAGED=null;window.ADRIANA_DATA=buildData(snap);renderAll(snap);document.getElementById('lockState').textContent='● DATA LOCKED · VALIDATED';document.getElementById('uploadMsg').innerHTML+='<br><b>LOCKED:</b> '+fmtDate(snap.date)+' · '+snap.closingId;renderHistory();alert('Dataset '+fmtDate(snap.date)+' berhasil di-CLOSE & LOCK.');
 }
 function renderAfdSelectorHybrid(){const el=document.getElementById('afdFilter');if(!el)return;el.value=ACTIVE_AFD;el.onchange=()=>{ACTIVE_AFD=el.value;localStorage.setItem('adriana_active_afd',ACTIVE_AFD);const snaps=getAfdSnapshotsHybrid(ACTIVE_AFD);if(snaps.length){renderAll(snaps[snaps.length-1]);}else{document.getElementById('activeDate').textContent='No dataset';document.getElementById('activeMeta').textContent=(AFD_LABEL[ACTIVE_AFD]||'Semua Afdeling')+' · Belum ada dataset';document.getElementById('lockState').textContent='● NO DATASET';document.getElementById('dashboardSignals').innerHTML='<div class="notice">Belum ada dataset untuk afdeling ini.</div>';document.getElementById('dashboardDecision').textContent='—';document.getElementById('dashboardDecisionText').textContent='Upload AMANTA untuk afdeling yang dipilih.';renderHarvestDensitySummary({blocks:{}});renderHistory();renderDecisionHistory();}}}
-function renderHistory(){const host=document.getElementById('evalHistory');if(!host)return;migrateLegacyHistoryHybrid();const idx=JSON.parse(localStorage.getItem('adriana_afd_index')||'[]');const rows=idx.map(x=>{const s=JSON.parse(localStorage.getItem(afdKeyHybrid(x.date,x.afd))||'null');return s?`<div class="notice" style="margin-top:8px"><b>${fmtDate(s.date)} · ${html.escape(s.afdLabel||s.afd)}</b><br>${s.jjg?Number(s.jjg).toLocaleString():'—'} JJG · ${s.producingHK||0} HK · ${s.files?.length||0} AMANTA file(s)<br><button class="btn" onclick="loadAfdDateHybrid('${s.date}','${s.afd}')">LOAD THIS DATE</button></div>`:''}).join('');host.innerHTML='<h2>Daily Data History</h2>'+(rows||'<div class="small">Belum ada data.</div>');if(typeof renderDecisionHistory==='function')renderDecisionHistory();}
-function loadAfdDateHybrid(date,afd){const s=JSON.parse(localStorage.getItem(afdKeyHybrid(date,afd))||'null');if(!s)return;ACTIVE_AFD=afd;localStorage.setItem('adriana_active_afd',afd);const f=document.getElementById('afdFilter');if(f)f.value=afd;ACTIVE=s;renderAll(s);show('dashboard');}
+function renderHistory(){
+ const host=document.getElementById('evalHistory');if(!host)return;
+ let snaps=[];try{snaps=getAfdSnapshotsHybrid(ACTIVE_AFD==='ALL'?'':ACTIVE_AFD)||[];}catch(e){}
+ const rows=snaps.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(s=>`<div class="notice" style="margin-top:8px"><b>${fmtDate(s.date)} · ${html.escape(s.afdLabel||s.afd)}</b><br>${s.jjg?Number(s.jjg).toLocaleString():'—'} JJG · ${s.producingHK||0} HK · ${s.files?.length||0} AMANTA file(s)<br><button class="btn" onclick="loadAfdDateHybrid('${s.date}','${s.afd}')">LOAD THIS DATE</button></div>`).join('');
+ host.innerHTML='<h2>Daily Data History</h2>'+(rows||'<div class="small">Belum ada data.</div>');
+ if(typeof renderDecisionHistory==='function')renderDecisionHistory();
+}
+function loadAfdDateHybrid(date,afd){
+ let s=null;try{s=(getAfdSnapshotsHybrid(afd||'')||[]).find(x=>x&&x.date===date)||null;}catch(e){}
+ if(!s)return;
+ ACTIVE_AFD=afd||s.afd||'OC';localStorage.setItem('adriana_active_afd',ACTIVE_AFD);
+ const f=document.getElementById('afdFilter');if(f)f.value=ACTIVE_AFD;
+ ACTIVE=s;window.ADRIANA_DATA=buildData(s);renderAll(s);show('dashboard');
+}
 function loadDate(date){const afd=ACTIVE_AFD==='ALL'?'OC':ACTIVE_AFD;loadAfdDateHybrid(date,afd)}
 function renderAll(snap){const d=buildData(snap);ACTIVE=snap;window.ADRIANA_DATA=d;document.getElementById('activeDate').textContent=fmtDate(snap.date);document.getElementById('activeMeta').textContent=`${snap.site} · ${AFD_LABEL[snap.afd]||snap.afd||'OCYM'} · AMANTA v${snap.version} · ${snap.files.length} file(s) · ${snap.closingId}`;document.getElementById('lockState').textContent='● DATA LOCKED · VALIDATED';const vals=document.querySelectorAll('#dashboard .card .value');if(vals[0])vals[0].textContent=d.jjg.toLocaleString();if(vals[1])vals[1].textContent=d.producingHK.toLocaleString();if(vals[2])vals[2].textContent=d.netTransportKg?(d.netTransportKg/1000).toFixed(2)+' T':'—';if(vals[3])vals[3].textContent=d.bjrKgPerJjg?d.bjrKgPerJjg.toFixed(2)+' kg/JJG':'—';const donut=document.getElementById('donutTotal');if(donut)donut.textContent=d.jjg.toLocaleString();renderProduction(d);renderHarvestDensitySummary(d);renderJJGContribution(d);renderQuality(d);renderTransport(d);renderRotation(d);renderDashboard(d);buildExceptions(d);renderAI(d);renderPDCA(d);renderHistory();renderEvaluationState(d);}
 
 
 /* V24 People Performance + Premi engine
    Additive feature: does not alter Production / Rotation / Quality / Transport / Exception / PDCA calculations.
-   People Performance starts at 2026-09-01. */
-const PEOPLE_START_DATE='2026-09-01';
+   People Performance starts at 2026-08-18. */
+const PEOPLE_START_DATE='2026-08-18';
 const OC_PREMIUM_BASIS={
  "2":90,"5":90,"8":90,"6":90,"3":90,"1":90,"1A":90,"10":90,"10A":90,"14":90,"18":90,"22":90,
  "4":70,"7":70,"9":70,"11":70,"12":70,"13":70,"15":70,"16":70,"17":70,"19":70,"20":70,"21":70,
@@ -689,6 +832,331 @@ function renderPeoplePerformance(d){
 function renderPeopleAI(d){
  const host=document.getElementById('aiAnalysis');if(!host||!d?.date||d.date<PEOPLE_START_DATE||ACTIVE_AFD!=='OC')return;const pm=peopleMtdRows(d.date,d),rows=pm.rows,under=rows.filter(x=>x.cluster.key==='C').sort((a,b)=>(a.achievement??999)-(b.achievement??999)).slice(0,5);const blockTotals={};(d.sections?.PRODUKSIBLOK?.rows||[]).forEach(r=>{const h=d.sections.PRODUKSIBLOK.header,bi=h.indexOf('BLOK'),ji=h.indexOf('JJG'),b=cleanCell(r[bi]);if(b!=='—')blockTotals[b]=(blockTotals[b]||0)+num(r[ji]);});const focusBlock=Object.entries(blockTotals).sort((a,b)=>a[1]-b[1])[0];const peopleText=under.length?under.map(x=>`<b>${html.escape(x.name!=='—'?x.name:x.npk)}</b> — ${x.jjg.toLocaleString('id-ID')} JJG today, achievement ${x.achievement?.toFixed(1)}%, Class C. Coaching: verify harvest execution with Mandor Panen/Mandor 1.`).join('<br>'):'No Class C harvester signal today.';const blockText=focusBlock?`<b>${html.escape(focusBlock[0])}</b> — ${focusBlock[1].toLocaleString('id-ID')} JJG today; use as intervention review point alongside rotation and quality evidence.`:'No block intervention signal available.';host.innerHTML=`<b>People coaching signal</b><br><br>${peopleText}<br><br><b>Block intervention signal</b><br><br>${blockText}<br><br><span class="small">AI is a coaching/support signal only. Premi is deterministic and is not calculated by AI.</span>`;
 }
+
+/* V25 HARD FIX — PREMI IS PER HARVESTER, PER DAY, BASED ONLY ON THE BLOCKS THAT HARVESTER ACTUALLY HARVESTED.
+   No section basis is used in the premi comparison.
+   Mon-Sat: max(0, harvester JJG - average of that harvester's harvested-block bases) * 1500.
+   Sunday: harvester JJG * 2500.
+   MTD: sum of each daily premi transaction from day 1 through active date in the active month. */
+(function(){
+  const _blockBasis = (block)=>{
+    const k=peopleBlockKey(block);
+    return k && Object.prototype.hasOwnProperty.call(OC_PREMIUM_BASIS,k) ? Number(OC_PREMIUM_BASIS[k]) : null;
+  };
+  const _dayRows = (snap)=>{
+    const p=snap?.sections?.PRODUKSIBLOK;
+    if(!p) return [];
+    const h=p.header||[];
+    const ix={npk:h.indexOf('NPK'),name:h.indexOf('NAMA'),block:h.indexOf('BLOK'),jjg:h.indexOf('JJG'),mandor:h.indexOf('KEMANDORAN')};
+    if(ix.npk<0||ix.block<0||ix.jjg<0) return [];
+    return (p.rows||[]).map(r=>({
+      npk:cleanCell(r[ix.npk]), name:ix.name>=0?cleanCell(r[ix.name]):'—',
+      block:cleanCell(r[ix.block]), jjg:num(r[ix.jjg]), mandor:ix.mandor>=0?cleanCell(r[ix.mandor]):'—'
+    })).filter(r=>r.npk!=='—' && r.block!=='—' && r.jjg>0 && _blockBasis(r.block)!=null);
+  };
+  window.ADRIANA_BUILD_PREMI_DAY=function(snap){
+    const rows=_dayRows(snap), sunday=peopleDateSunday(snap?.date), by={};
+    rows.forEach(r=>{
+      const k=r.npk;
+      by[k] ||= {npk:r.npk,name:r.name,jjg:0,blocks:[],bases:[],mandors:[]};
+      const x=by[k]; x.jjg+=r.jjg;
+      const b=peopleBlockKey(r.block), basis=_blockBasis(r.block);
+      if(!x.blocks.includes(b)){x.blocks.push(b);x.bases.push(basis);}
+      if(r.mandor && !x.mandors.includes(r.mandor)) x.mandors.push(r.mandor);
+    });
+    const transactions=Object.values(by).map(x=>{
+      const avg=x.bases.length ? x.bases.reduce((a,b)=>a+b,0)/x.bases.length : null;
+      const more=sunday?0:Math.max(0,x.jjg-(avg??0));
+      const premi=sunday?x.jjg*2500:more*1500;
+      return {npk:x.npk,name:x.name,jjg:x.jjg,blocks:x.blocks,blockBases:x.bases,avgBasis:avg,more,premi,isSunday:sunday,mandors:x.mandors};
+    });
+    return {date:snap?.date||null,rows:transactions,transactions,totalJjg:rows.reduce((a,r)=>a+r.jjg,0),totalMore:transactions.reduce((a,r)=>a+r.more,0),totalPremi:transactions.reduce((a,r)=>a+r.premi,0),isSunday:sunday};
+  };
+  window.ADRIANA_BUILD_PREMI_HISTORY=function(activeDate,currentSnap){
+    const d=new Date(activeDate+'T00:00:00'), y=d.getFullYear(), m=d.getMonth();
+    const start=`${y}-${String(m+1).padStart(2,'0')}-01`;
+    const snaps=peopleLockedSnapshots('OC').filter(x=>x.date>=start&&x.date<=activeDate);
+    if(currentSnap?.date>=start&&currentSnap.date<=activeDate) snaps.push(currentSnap);
+    const unique=new Map(snaps.map(x=>[x.date,x]));
+    const daily=[...unique.values()].sort((a,b)=>a.date.localeCompare(b.date)).map(window.ADRIANA_BUILD_PREMI_DAY);
+    const agg={};
+    daily.forEach(day=>day.rows.forEach(x=>{
+      const k=x.npk; agg[k] ||= {npk:k,name:x.name,jjg:0,more:0,premi:0,hkDays:0};
+      agg[k].jjg+=x.jjg; agg[k].more+=x.more; agg[k].premi+=x.premi; agg[k].hkDays+=1;
+    }));
+    return {daily,agg:Object.values(agg)};
+  };
+  window.ADRIANA_PREMI_RENDER=function(d){
+    const host=document.getElementById('peopleBody'), dashHost=document.getElementById('dashPeopleBody');
+    if(!d?.date||d.date<PEOPLE_START_DATE||ACTIVE_AFD==='OE') return;
+    const hist=window.ADRIANA_BUILD_PREMI_HISTORY(d.date,d), day=hist.daily.find(x=>x.date===d.date)||window.ADRIANA_BUILD_PREMI_DAY(d);
+    const map=Object.fromEntries(hist.agg.map(x=>[x.npk,x]));
+    const rows=day.rows.slice().sort((a,b)=>b.jjg-a.jjg).map(x=>{
+      const a=map[x.npk]||{jjg:0,more:0,premi:0,hkDays:0};
+      const achievement=a.hkDays && x.avgBasis>0 ? (a.jjg/a.hkDays)/x.avgBasis*100 : null;
+      return {...x,mtdMore:a.more,mtdPremi:a.premi,mtdJjg:a.jjg,mtdHk:a.hkDays,achievement,cluster:peopleClass(achievement)};
+    });
+    const cls={A:0,B:0,C:0}; rows.forEach(x=>{if(cls[x.cluster.key]!=null)cls[x.cluster.key]++;});
+    const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v};
+    set('peopleCount',rows.length);set('peopleJjg',day.totalJjg.toLocaleString('id-ID'));set('peopleMore',day.totalMore.toFixed(2));set('peopleMoreMtd',rows.reduce((a,x)=>a+x.mtdMore,0).toFixed(2));set('peoplePremi',moneyRp(day.totalPremi));set('peoplePremiMtd',moneyRp(rows.reduce((a,x)=>a+x.mtdPremi,0)));
+    set('classACount',cls.A);set('classBCount',cls.B);set('classCCount',cls.C);
+    set('dashPeopleCount',rows.length);set('dashPeopleJjg',day.totalJjg.toLocaleString('id-ID'));set('dashPeopleMore',day.totalMore.toFixed(2));set('dashPeopleMoreMtd',rows.reduce((a,x)=>a+x.mtdMore,0).toFixed(2));set('dashPeoplePremi',moneyRp(day.totalPremi));set('dashPeoplePremiMtd',moneyRp(rows.reduce((a,x)=>a+x.mtdPremi,0)));
+    const rowHtml=rows.map(x=>`<tr><td><b>${html.escape(x.name!=='—'?x.name:x.npk)}</b></td><td>${x.jjg.toLocaleString('id-ID')}</td><td>${x.avgBasis==null?'—':x.avgBasis.toFixed(2)}</td><td>${x.more.toFixed(2)}</td><td>${x.mtdMore.toFixed(2)}</td><td class="premiMoney">${moneyRp(x.premi)}</td><td class="premiMoney">${moneyRp(x.mtdPremi)}</td><td>${(x.mtdJjg/x.mtdHk||0).toFixed(2)}</td><td>${x.achievement==null?'—':x.achievement.toFixed(1)+'%'}</td><td><span class="classPill ${x.cluster.key}">${x.cluster.label}</span></td></tr>`).join('');
+    if(host)host.innerHTML=rowHtml||'<tr><td colspan="10">No producing harvester.</td></tr>';
+    if(dashHost)dashHost.innerHTML=rows.map(x=>`<tr><td><b>${html.escape(x.name!=='—'?x.name:x.npk)}</b></td><td>${x.jjg.toLocaleString('id-ID')}</td><td>${x.avgBasis==null?'—':x.avgBasis.toFixed(2)}</td><td>${x.more.toFixed(2)}</td><td>${x.mtdMore.toFixed(2)}</td><td class="premiMoney">${moneyRp(x.premi)}</td><td class="premiMoney">${moneyRp(x.mtdPremi)}</td><td><span class="classPill ${x.cluster.key}">${x.cluster.label}</span></td></tr>`).join('')||'<tr><td colspan="8">No producing harvester.</td></tr>';
+  };
+  renderPeoplePerformance=function(d){window.ADRIANA_PREMI_RENDER(d);};
+  buildPeopleDay=function(snap){return window.ADRIANA_BUILD_PREMI_DAY(snap);};
+  buildPeopleHistory=function(activeDate,currentSnap){return window.ADRIANA_BUILD_PREMI_HISTORY(activeDate,currentSnap);};
+  peopleMtdRows=function(activeDate,currentSnap){const h=window.ADRIANA_BUILD_PREMI_HISTORY(activeDate,currentSnap),active=h.daily.find(x=>x.date===activeDate)||window.ADRIANA_BUILD_PREMI_DAY(currentSnap),map=Object.fromEntries(h.agg.map(x=>[x.npk,x]));return {history:h,rows:active.rows.map(x=>{const a=map[x.npk]||{jjg:0,more:0,premi:0,hkDays:0};return {...x,mtdMore:a.more,mtdPremi:a.premi,mtdJjg:a.jjg,mtdHk:a.hkDays,achievement:a.hkDays&&x.avgBasis?(a.jjg/a.hkDays)/x.avgBasis*100:null,cluster:peopleClass(a.hkDays&&x.avgBasis?(a.jjg/a.hkDays)/x.avgBasis*100:null)};})};};
+})();
+
+
+/* ADRIANA PERIOD BOOK UPGRADE
+   Book September 2026 = 21 Aug 2026 through 20 Sep 2026.
+   Every daily premi transaction remains deterministic; aggregation is by Open Book–Closing Book.
+*/
+(function(){
+  const PERIOD_MIN_DATE='2026-08-18';
+
+  function isoDate(d){
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+  function localDate(s){ return new Date(String(s)+'T00:00:00'); }
+  function addDays(d,n){ const x=new Date(d); x.setDate(x.getDate()+n); return x; }
+  function addMonths(d,n){ const x=new Date(d); x.setMonth(x.getMonth()+n); return x; }
+
+  function bookPeriod(activeDate){
+    const d=localDate(activeDate);
+    if(d>=localDate('2026-08-18') && d<=localDate('2026-09-20')) return {open:'2026-08-18',close:'2026-09-20',bookMonth:'2026-09'};
+    let open, close, bookMonth;
+    if(d.getDate()>=21){
+      open=new Date(d.getFullYear(),d.getMonth(),21);
+      close=new Date(d.getFullYear(),d.getMonth()+1,20);
+      bookMonth=new Date(d.getFullYear(),d.getMonth()+1,1);
+    }else{
+      open=new Date(d.getFullYear(),d.getMonth()-1,21);
+      close=new Date(d.getFullYear(),d.getMonth(),20);
+      bookMonth=new Date(d.getFullYear(),d.getMonth(),1);
+    }
+    return {open:isoDate(open),close:isoDate(close),bookMonth:isoDate(bookMonth).slice(0,7)};
+  }
+
+  function allLockedOC(){
+    let arr=[];
+    try{ if(typeof getAfdSnapshotsHybrid==='function') arr=getAfdSnapshotsHybrid('OC')||[]; }catch(e){}
+    if(!arr.length){
+      try{ if(typeof getLockedSnapshots==='function') arr=getLockedSnapshots().filter(x=>!x.afd||x.afd==='OC'); }catch(e){}
+    }
+    return (arr||[]).filter(x=>x&&x.date&&x.date>=PERIOD_MIN_DATE)
+      .sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+  }
+
+  /* Override the old month-1-to-active-date history. */
+  window.ADRIANA_BUILD_PREMI_HISTORY=function(activeDate,currentSnap){
+    const p=bookPeriod(activeDate);
+    const end=String(activeDate)<p.close?String(activeDate):p.close;
+    const snaps=allLockedOC().filter(x=>x.date>=p.open && x.date<=end);
+    if(currentSnap?.date && currentSnap.date>=p.open && currentSnap.date<=end) snaps.push(currentSnap);
+    const unique=new Map(snaps.map(x=>[x.date,x]));
+    const daily=[...unique.values()]
+      .sort((a,b)=>String(a.date).localeCompare(String(b.date)))
+      .map(window.ADRIANA_BUILD_PREMI_DAY);
+
+    const agg={};
+    daily.forEach(day=>day.rows.forEach(x=>{
+      const k=x.npk;
+      agg[k] ||= {npk:k,name:x.name,jjg:0,more:0,premi:0,hkDays:0,basisSum:0,basisCount:0};
+      const a=agg[k];
+      a.jjg+=x.jjg;
+      a.more+=x.more;
+      a.premi+=x.premi;
+      a.hkDays+=1;
+      if(Number.isFinite(x.avgBasis)){a.basisSum+=x.avgBasis;a.basisCount+=1;}
+    }));
+    return {
+      open:p.open,close:p.close,bookMonth:p.bookMonth,end,
+      daily,
+      agg:Object.values(agg).map(x=>({...x,
+        jjgPerHK:x.hkDays?x.jjg/x.hkDays:0,
+        avgBasis:x.basisCount?x.basisSum/x.basisCount:null
+      }))
+    };
+  };
+
+  function periodLabel(p){
+    return `Book ${fmtDate(p.bookMonth+'-01').replace(/\s+\d{4}$/,'')} ${p.bookMonth.slice(0,4)}`;
+  }
+
+  function renderPeriodClosing(hist, activeDate){
+    const p={open:hist.open,close:hist.close,bookMonth:hist.bookMonth};
+    const active=String(activeDate);
+    const closed=active>=p.close;
+    const closing=active===p.close;
+
+    const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v};
+    set('peoplePeriod',`${fmtDate(p.open)} – ${fmtDate(p.close)}`);
+    set('dashPeoplePeriod',`Book ${p.bookMonth}`);
+    set('peoplePeriodDetail',`Book ${p.bookMonth} · Open ${fmtDate(p.open)} · Closing ${fmtDate(p.close)} · Actual through ${fmtDate(hist.end)}`);
+    set('peopleOpenBook',fmtDate(p.open));
+    set('peopleCloseBook',fmtDate(p.close));
+
+    const status=document.getElementById('peoplePeriodStatus');
+    if(status){
+      status.className='periodStatus'+(closed?' closed':(closing?' closing':''));
+      status.textContent=closed?'CLOSED':(closing?'CLOSING TODAY':'OPEN');
+    }
+
+    const totalPremi=hist.agg.reduce((a,x)=>a+x.premi,0);
+    const totalMore=hist.agg.reduce((a,x)=>a+x.more,0);
+    set('peoplePeriodPremi',moneyRp(totalPremi));
+    set('peoplePeriodMore',totalMore.toFixed(2));
+
+    const host=document.getElementById('peoplePeriodBody');
+    if(host){
+      const rows=hist.agg.slice().sort((a,b)=>b.premi-a.premi);
+      host.innerHTML=rows.map((x,i)=>`
+        <tr>
+          <td>${i+1}</td>
+          <td><b>${html.escape(x.name!=='—'?x.name:x.npk)}</b></td>
+          <td>${x.jjg.toLocaleString('id-ID')}</td>
+          <td>${x.hkDays}</td>
+          <td>${x.more.toFixed(2)}</td>
+          <td class="premiMoney">${moneyRp(x.premi)}</td>
+          <td>${x.jjgPerHK.toFixed(2)}</td>
+        </tr>`).join('') || '<tr><td colspan="7" class="small">Belum ada realisasi premi pada periode ini.</td></tr>';
+    }
+  }
+
+  window.ADRIANA_PREMI_RENDER=function(d){
+    const host=document.getElementById('peopleBody'), dashHost=document.getElementById('dashPeopleBody');
+    if(!d?.date||String(d.date)<PERIOD_MIN_DATE||ACTIVE_AFD==='OE'){
+      const msg=ACTIVE_AFD==='OE'?'OEYM belum memiliki master basis premi.':`People Performance dimulai ${fmtDate(PERIOD_MIN_DATE)}.`;
+      if(host)host.innerHTML=`<tr><td colspan="10" class="small">${msg}</td></tr>`;
+      if(dashHost)dashHost.innerHTML=`<tr><td colspan="8" class="small">${msg}</td></tr>`;
+      return;
+    }
+
+    const hist=window.ADRIANA_BUILD_PREMI_HISTORY(d.date,d);
+    const day=hist.daily.find(x=>x.date===d.date)||window.ADRIANA_BUILD_PREMI_DAY(d);
+    const map=Object.fromEntries(hist.agg.map(x=>[x.npk,x]));
+    const rows=day.rows.slice().sort((a,b)=>b.jjg-a.jjg).map(x=>{
+      const a=map[x.npk]||{jjg:0,more:0,premi:0,hkDays:0,jjgPerHK:0,avgBasis:null};
+      const achievement=a.avgBasis&&a.avgBasis>0 ? (a.jjgPerHK/a.avgBasis*100):null;
+      return {...x,mtdMore:a.more,mtdPremi:a.premi,mtdJjg:a.jjg,mtdHk:a.hkDays,mtdJjgPerHK:a.jjgPerHK,
+        achievement,cluster:peopleClass(achievement)};
+    });
+
+    const cls={A:0,B:0,C:0};
+    rows.forEach(x=>{if(cls[x.cluster.key]!=null)cls[x.cluster.key]++;});
+    const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v};
+    set('peopleCount',rows.length);
+    set('peopleJjg',day.totalJjg.toLocaleString('id-ID'));
+    set('peopleMore',day.totalMore.toFixed(2));
+    set('peopleMoreMtd',hist.agg.reduce((a,x)=>a+x.more,0).toFixed(2));
+    set('peoplePremi',moneyRp(day.totalPremi));
+    set('peoplePremiMtd',moneyRp(hist.agg.reduce((a,x)=>a+x.premi,0)));
+    set('classACount',cls.A);set('classBCount',cls.B);set('classCCount',cls.C);
+    set('dashPeopleCount',rows.length);set('dashPeopleJjg',day.totalJjg.toLocaleString('id-ID'));
+    set('dashPeopleMore',day.totalMore.toFixed(2));
+    set('dashPeopleMoreMtd',hist.agg.reduce((a,x)=>a+x.more,0).toFixed(2));
+    set('dashPeoplePremi',moneyRp(day.totalPremi));
+    set('dashPeoplePremiMtd',moneyRp(hist.agg.reduce((a,x)=>a+x.premi,0)));
+
+    if(host)host.innerHTML=rows.map(x=>`<tr>
+      <td><b>${html.escape(x.name!=='—'?x.name:x.npk)}</b></td>
+      <td>${x.jjg.toLocaleString('id-ID')}</td>
+      <td>${x.avgBasis==null?'—':x.avgBasis.toFixed(2)}</td>
+      <td>${x.more.toFixed(2)}</td>
+      <td>${moneyRp(x.premi)}</td>
+      <td>${x.mtdMore.toFixed(2)}</td>
+      <td>${moneyRp(x.mtdPremi)}</td>
+      <td>${x.mtdJjgPerHK.toFixed(2)}</td>
+      <td>${x.achievement==null?'—':x.achievement.toFixed(1)+'%'}</td>
+      <td><span class="classPill ${x.cluster.key}">${x.cluster.label}</span></td>
+    </tr>`).join('')||'<tr><td colspan="10">No producing harvester.</td></tr>';
+
+    if(dashHost)dashHost.innerHTML=rows.map(x=>`<tr>
+      <td><b>${html.escape(x.name!=='—'?x.name:x.npk)}</b></td>
+      <td>${x.jjg.toLocaleString('id-ID')}</td>
+      <td>${x.avgBasis==null?'—':x.avgBasis.toFixed(2)}</td>
+      <td>${x.more.toFixed(2)}</td>
+      <td>${x.mtdMore.toFixed(2)}</td>
+      <td>${moneyRp(x.premi)}</td>
+      <td>${moneyRp(x.mtdPremi)}</td>
+      <td><span class="classPill ${x.cluster.key}">${x.cluster.label}</span></td>
+    </tr>`).join('')||'<tr><td colspan="8">No producing harvester.</td></tr>';
+
+    renderPeriodClosing(hist,d.date);
+  };
+})();
+
+/* ADRIANA INFIELD REAL — PRODUKSIUNIT + NPKUTAMA HELPER */
+(function(){
+ const clean=v=>String(v??'').trim(), up=v=>clean(v).toUpperCase(), n=v=>{const x=Number(String(v??'').replace(/,/g,''));return Number.isFinite(x)?x:0};
+ const sec=(d,n)=>d?.sections?.[n]||null;
+ const ix=(h,arr)=>{for(const a of arr){const i=(h||[]).findIndex(x=>up(x)===up(a));if(i>=0)return i}return -1};
+ function build(d){
+  const abs=sec(d,'ABSENSI'), prod=sec(d,'PRODUKSIUNIT'), tr=sec(d,'TR_TBS_TRANSPORT');
+  const teams={}; const npkToCode={}; const npkNames={};
+  if(abs){
+   const h=abs.header||[], ni=ix(h,['NPK']), nn=ix(h,['NAMA']), ai=ix(h,['KODEUNIT','KODEALAT','KODE ALAT']), hi=ix(h,['NPKUTAMA']);
+   (abs.rows||[]).forEach(r=>{
+    const npk=ni>=0?clean(r[ni]):'', name=nn>=0?clean(r[nn]):'', code=ai>=0?clean(r[ai]):'', main=hi>=0?clean(r[hi]):'';
+    if(npk&&name)npkNames[npk]=name;
+    if(code&&npk){
+      const k=code.toUpperCase();
+      npkToCode[npk]=k;
+      teams[k] ||= {code:k,mainNpk:npk,mainName:name,helpers:[],members:[]};
+      if(!teams[k].members.some(x=>x.npk===npk))teams[k].members.push({npk,name,role:'Utama'});
+    }
+   });
+   // Helper: NPKUTAMA menunjuk ke NPK utama yang memegang KODEUNIT.
+   (abs.rows||[]).forEach(r=>{
+    const npk=ni>=0?clean(r[ni]):'', name=nn>=0?clean(r[nn]):'', main=hi>=0?clean(r[hi]):'';
+    if(!npk||!main||npk===main)return;
+    const code=npkToCode[main];
+    if(!code)return;
+    const t=teams[code];
+    if(t&&!t.members.some(x=>x.npk===npk))t.members.push({npk,name:name||npkNames[npk]||npk,role:'Helper'});
+   });
+  }
+  // JJG Infield = PRODUKSIUNIT.JJG grouped by KODEUNIT, tanpa deduction langsir.
+  // SUMMARY PER TIM / KODEUNIT — jangan pecah per blok.
+  // Semua JJG PRODUKSIUNIT dijumlahkan ke 1 tim, sementara blok hanya diringkas unik.
+  const by={};
+  if(prod){
+   const h=prod.header||[], ci=ix(h,['KODEUNIT']), bi=ix(h,['BLOK','BLOCKCODE','BLOCK']), ji=ix(h,['JJG']);
+   (prod.rows||[]).forEach(r=>{
+    const code=ci>=0?clean(r[ci]).toUpperCase():'', block=bi>=0?clean(r[bi]):'', jjg=ji>=0?n(r[ji]):0;
+    if(!code||jjg<=0)return;
+    by[code] ||= {code,jjg:0,blocks:new Set()};
+    by[code].jjg+=jjg;
+    if(block && block!=='—')by[code].blocks.add(block);
+   });
+  }
+  let wi=0,wo=0;if(tr){const h=tr.header||[],a=ix(h,['WEIGHTIN']),b=ix(h,['WEIGHTOUT']);if(a>=0||b>=0)(tr.rows||[]).forEach(r=>{wi+=a>=0?n(r[a]):0;wo+=b>=0?n(r[b]):0;});}
+  const totalGross=Object.values(by).reduce((a,x)=>a+x.jjg,0), bjr=totalGross>0?Math.max(0,wi-wo)/totalGross:null;
+  const rows=Object.values(by).map(x=>{
+    const t=teams[x.code];
+    const members=t?.members||[];
+    const nama=members.length?members.map(m=>m.name).join(' + '):'Nama belum terhubung';
+    const ident=members.length?members.map(m=>`${m.name} (${m.npk})`).join(' + '):'NPK belum terhubung';
+    return {...x,blocks:[...x.blocks].sort(),nama,ident,mainName:t?.mainName||'Nama belum terhubung',members,bjr,langsir:null,net:x.jjg,tonase:bjr!=null?x.jjg*bjr/1000:null};
+  });
+  const teamCodes=new Set(rows.map(x=>x.code));
+  return {rows,people:[...teamCodes],gross:totalGross,langsir:null,net:totalGross};
+ }
+ function render(d){
+  const host=document.getElementById('infieldBody');if(!host)return;
+  if(!d?.date||ACTIVE_AFD!=='OC'){host.innerHTML='<tr><td colspan="9" class="small">Infield tersedia untuk OCYM setelah dataset diproses.</td></tr>';return;}
+  const x=build(d),rows=x.rows.sort((a,b)=>a.net-b.net),set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v};
+  set('infieldPeople',x.people.length.toLocaleString('id-ID'));set('infieldBlocks',new Set(rows.flatMap(r=>r.blocks||[])).size.toLocaleString('id-ID'));set('infieldGross',x.gross.toLocaleString('id-ID'));set('infieldLangsir','—');set('infieldNet',x.net.toLocaleString('id-ID'));
+  host.innerHTML=rows.map((r,i)=>{const blockText=(r.blocks||[]).join(', ');return `<tr><td><span class="rankBadge ${i===0?'low':''}">${i+1}</span></td><td><b>${html.escape(r.nama)}</b><div class="small">${html.escape(r.ident)}</div></td><td>${html.escape(r.code)}</td><td>${html.escape(blockText||'—')}</td><td>${r.jjg.toLocaleString('id-ID')}</td><td>—</td><td><b>${r.net.toLocaleString('id-ID')}</b></td><td>${r.bjr==null?'—':r.bjr.toFixed(2)+' kg/JJG'}</td><td>${r.tonase==null?'—':r.tonase.toFixed(3)+' T'}</td></tr>`}).join('')||'<tr><td colspan="9" class="small">Belum ada record PRODUKSIUNIT dengan KODEUNIT.</td></tr>';
+ }
+ window.ADRIANA_BUILD_INFIELD_REAL=build;const base=renderAll;renderAll=function(snap){base(snap);try{render(snap)}catch(e){console.warn('Infield:',e)}};
+})();
+
 const _ADRIANA_RENDER_ALL_BASE=renderAll;
 renderAll=function(snap){
   _ADRIANA_RENDER_ALL_BASE(snap);
@@ -696,5 +1164,192 @@ renderAll=function(snap){
 };
 
 document.addEventListener('DOMContentLoaded',()=>{migrateLegacyHistoryHybrid();renderAfdSelectorHybrid();const f=document.getElementById('afdFilter');if(f)f.value=ACTIVE_AFD;});
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(e=>console.warn('SW:',e)));}
+
+/* V26 FINAL — OEYM LOCK/HISTORY + KKP PRODUCTION / PEOPLE PERFORMANCE
+   Additive patch: existing AMANTA calculations remain unchanged.
+   Full locked snapshots use IndexedDB; localStorage keeps only indexes/legacy snapshots.
+   KKP roster is the supplied OC PN1 / OC PN2 master. */
+(function(){
+  const IDB_NAME='adriana_v26_lock_store';
+  const IDB_STORE='snapshots';
+  let dbPromise=null;
+  const openDB=()=>dbPromise||(dbPromise=new Promise((resolve,reject)=>{
+    if(!window.indexedDB)return reject(new Error('IndexedDB unavailable'));
+    const req=indexedDB.open(IDB_NAME,1);
+    req.onupgradeneeded=()=>{const db=req.result;if(!db.objectStoreNames.contains(IDB_STORE))db.createObjectStore(IDB_STORE,{keyPath:'id'});};
+    req.onsuccess=()=>resolve(req.result); req.onerror=()=>reject(req.error||new Error('IndexedDB open failed'));
+  }));
+  const idbPut=async(snap)=>{const db=await openDB();return new Promise((resolve,reject)=>{const tx=db.transaction(IDB_STORE,'readwrite');tx.objectStore(IDB_STORE).put({...snap,id:`${snap.afd||'OC'}_${snap.date}`});tx.oncomplete=()=>resolve(true);tx.onerror=()=>reject(tx.error||new Error('IndexedDB write failed'));});};
+  const idbAll=async()=>{try{const db=await openDB();return await new Promise((resolve,reject)=>{const tx=db.transaction(IDB_STORE,'readonly'),r=tx.objectStore(IDB_STORE).getAll();r.onsuccess=()=>resolve(r.result||[]);r.onerror=()=>reject(r.error);});}catch(e){console.warn('ADRIANA IDB:',e);return[];}};
+  const parseLS=(k,def)=>{try{const x=JSON.parse(localStorage.getItem(k)||JSON.stringify(def));return x;}catch(e){return def;}};
+  const legacy=()=>{
+    const out=[]; const idx=parseLS('adriana_afd_index',[]);
+    if(Array.isArray(idx))idx.forEach(x=>{try{const s=JSON.parse(localStorage.getItem(afdKeyHybrid(x.date,x.afd))||'null');if(s)out.push(s);}catch(e){}});
+    const dates=parseLS('adriana_daily_index',[]);
+    if(Array.isArray(dates))dates.forEach(date=>{try{const s=JSON.parse(localStorage.getItem('adriana_daily_'+date)||'null');if(s)out.push(s);}catch(e){}});
+    return out;
+  };
+  const merged=async(afd)=>{
+    const all=[...legacy(),...(await idbAll())],m=new Map();
+    all.forEach(s=>{if(!s||!s.date)return;const a=s.afd||'OC';if(!afd||afd==='ALL'||a===afd)m.set(`${a}_${s.date}`,s);});
+    return [...m.values()].sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+  };
+  // Keep a small in-memory cache of IndexedDB snapshots so all existing synchronous
+  // dashboard functions (selector, rotation, People Performance, etc.) can continue
+  // to work without changing their calculation logic.
+  window.ADRIANA_LOCK_IDB_CACHE=[];
+  const refreshLockIdbCache=async()=>{
+    window.ADRIANA_LOCK_IDB_CACHE=await idbAll();
+    try{
+      if(typeof renderAfdSelectorHybrid==='function') renderAfdSelectorHybrid();
+      if(typeof renderHistory==='function') renderHistory();
+      const afd=ACTIVE_AFD||'OC',arr=getAfdSnapshotsHybrid(afd==='ALL'?'':afd);
+      if(!ACTIVE && arr.length){ACTIVE=arr[arr.length-1];window.ADRIANA_DATA=buildData(ACTIVE);renderAll(ACTIVE);}
+    }catch(e){console.warn('ADRIANA IDB refresh:',e)}
+  };
+  window.ADRIANA_LOCK_IDB_READY=openDB().then(async()=>{await refreshLockIdbCache();return true;}).catch(e=>{console.warn('ADRIANA IDB:',e);return false;});
+  // Never migrate/duplicate old full snapshots into another localStorage key.
+  migrateLegacyHistoryHybrid=function(){};
+  getAfdSnapshotsHybrid=function(afd){
+    const all=[...legacy(),...(window.ADRIANA_LOCK_IDB_CACHE||[])],m=new Map();
+    all.forEach(s=>{if(!s||!s.date)return;const a=s.afd||'OC';if(!afd||afd==='ALL'||a===afd)m.set(`${a}_${s.date}`,s);});
+    return [...m.values()].sort((a,b)=>String(a.date).localeCompare(String(b.date)));
+  };
+  getLockedSnapshots=function(){return getAfdSnapshotsHybrid(ACTIVE_AFD==='ALL'?'':ACTIVE_AFD);};
+
+  closeDataset=async function(){
+    if(!STAGED)return;
+    const snap={...STAGED,closingId:`CLOSE-${STAGED.afd}-${STAGED.date}`,status:'LOCKED',lockedAt:new Date().toISOString(),versionNumber:1};
+    try{
+      const existing=(await merged(snap.afd)).find(x=>x.date===snap.date);
+      if(existing){snap.closingId=existing.closingId||snap.closingId;snap.versionNumber=existing.versionNumber||1;}
+      await idbPut(snap);
+      // Update the in-memory cache immediately so OC and OEYM remain visible as
+      // separate afdeling datasets in the existing multi-AFD UI.
+      const c=window.ADRIANA_LOCK_IDB_CACHE||[];
+      const ci=c.findIndex(x=>(x.afd||'OC')===(snap.afd||'OC')&&x.date===snap.date);
+      if(ci>=0)c[ci]=snap;else c.push(snap);
+      window.ADRIANA_LOCK_IDB_CACHE=c;
+      let idx=parseLS('adriana_afd_index',[]);if(!Array.isArray(idx))idx=[];
+      idx=idx.filter(x=>!(x.date===snap.date&&x.afd===snap.afd));idx.push({date:snap.date,afd:snap.afd});idx.sort((a,b)=>String(b.date).localeCompare(String(a.date)));localStorage.setItem('adriana_afd_index',JSON.stringify(idx));
+      // Keep only the legacy OC mirror when one already exists; do not create another large snapshot.
+      ACTIVE=snap;STAGED=null;window.ADRIANA_DATA=buildData(snap);renderAll(snap);
+      document.getElementById('lockState').textContent='● DATA LOCKED · VALIDATED';
+      document.getElementById('uploadMsg').innerHTML+='<br><b>LOCKED:</b> '+fmtDate(snap.date)+' · '+snap.closingId;
+      await renderHistory();
+      alert('Dataset '+fmtDate(snap.date)+' berhasil di-CLOSE & LOCK.');
+    }catch(e){console.error(e);alert('Gagal menyimpan CLOSE & LOCK: '+(e?.message||e));}
+  };
+  renderHistory=async function(){
+    const host=document.getElementById('evalHistory');if(!host)return;
+    const idx=await merged(ACTIVE_AFD==='ALL'?'':ACTIVE_AFD);
+    const rows=idx.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))).map(s=>`<div class="notice" style="margin-top:8px"><b>${fmtDate(s.date)} · ${html.escape(s.closingId||'—')}</b> · ${html.escape(AFD_LABEL[s.afd]||s.afd||'—')}<br>${Number(s.jjg||buildData(s).jjg||0).toLocaleString()} JJG · ${(s.producingHK??buildData(s).producingHK??0)} HK · ${s.files?.length||0} AMANTA file(s)<br><button class="btn" onclick="loadDate('${s.date}','${s.afd||''}')">LOAD THIS DATE</button></div>`).join('');
+    host.innerHTML='<h2>Daily Data History</h2>'+(rows||'<div class="small">Belum ada data.</div>');
+    if(typeof renderDecisionHistory==='function')renderDecisionHistory();
+  };
+  loadAfdDateHybrid=async function(date,afd){const arr=await merged(afd||ACTIVE_AFD||'OC'),s=arr.find(x=>x.date===date);if(!s)return;ACTIVE_AFD=s.afd||afd;localStorage.setItem('adriana_active_afd',ACTIVE_AFD);const f=document.getElementById('afdFilter');if(f)f.value=ACTIVE_AFD;ACTIVE=s;renderAll(s);show('dashboard');};
+  loadDate=function(date,afd){loadAfdDateHybrid(date,afd||ACTIVE_AFD||'OC');};
+
+  /* Supplied KKP master — NPK is primary key; name is fallback for Agus 05. */
+  const KKP_MASTER=[
+    {wilayah:'OC PN 1',kkp:'KKP 1',members:[['58','Parin'],['545','Herianto'],['455','Amir'],['505','Sarif Hubat']]},
+    {wilayah:'OC PN 1',kkp:'KKP 2',members:[['537','Solehudin'],['494','Teodorikus'],['544','Iman T'],['507','Sudarsono']]},
+    {wilayah:'OC PN 1',kkp:'KKP 3',members:[['538','Rudi'],['453','Kowangid'],['443','Mujiono'],['454','Eko R']]},
+    {wilayah:'OC PN 2',kkp:'KKP 1',members:[['478','Udi Waluyo'],['498','Heribertus'],['488','Arif Pujianto'],['452','Safrudin']]},
+    {wilayah:'OC PN 2',kkp:'KKP 2',members:[['508','Fransiskus Kas'],['496','Arifansius'],['497','Ponsianus'],['548','Aventus']]},
+    {wilayah:'OC PN 2',kkp:'KKP 3',members:[['543','Bariji'],['480','Selvianus'],['546','Mardavin'],['05','Agus 05']]}
+  ];
+  const norm=v=>String(v??'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+  /* KKP uses KODEKARY from PRODUKSIBLOK as the roster key.
+     AMANTA's NPK is the employee master number (e.g. 2102211),
+     while the supplied KKP roster uses the harvester code (e.g. 443).
+     KEMANDORAN determines the harvest wilayah: OCPN1 / OCPN2. */
+  const kkpCode=v=>{
+    const s=String(v??'').trim().toUpperCase();
+    const m=s.match(/^0*([0-9]+)(?:[A-Z].*)?$/);
+    return m?String(parseInt(m[1],10)):norm(s);
+  };
+  const kkpWilayah=v=>{
+    const s=norm(v);
+    if(s==='OCPN1')return 'OC PN 1';
+    if(s==='OCPN2')return 'OC PN 2';
+    return null;
+  };
+  const rosterMap=()=>{
+    const m=new Map();
+    KKP_MASTER.forEach(g=>g.members.forEach(([code,name])=>{
+      m.set(`${g.wilayah}|${kkpCode(code)}`,{wilayah:g.wilayah,kkp:g.kkp,code,name});
+      m.set(`${g.wilayah}|M:${norm(name)}`,{wilayah:g.wilayah,kkp:g.kkp,code,name});
+    }));
+    return m;
+  };
+  const kkpRows=(snap)=>{
+    const p=snap?.sections?.PRODUKSIBLOK,h=p?.header||[];
+    const ci=h.indexOf('KODEKARY'),ni=h.indexOf('NPK'),namei=h.indexOf('NAMA'),mi=h.indexOf('KEMANDORAN'),ji=h.indexOf('JJG');
+    const empty=()=>KKP_MASTER.map(g=>({...g,people:g.members.map(([code,name])=>({npk:'',code,name,jjg:0})),totalJjg:0}));
+    if(!p||ci<0||ji<0)return empty();
+
+    const map=rosterMap(),groups=empty();
+    (p.rows||[]).forEach(r=>{
+      const code=kkpCode(r[ci]);
+      const wilayah=kkpWilayah(mi>=0?r[mi]:'');
+      const npk=ni>=0?String(r[ni]??'').trim():'';
+      const name=namei>=0?String(r[namei]??'').trim():'';
+      const hit=(wilayah&&code)?map.get(`${wilayah}|${code}`):null;
+      const nameHit=wilayah?map.get(`${wilayah}|M:${norm(name)}`):null;
+      const roster=nameHit||hit;
+      if(!roster)return;
+
+      const gi=groups.findIndex(g=>g.wilayah===roster.wilayah&&g.kkp===roster.kkp);
+      if(gi<0)return;
+      const miRoster=groups[gi].members.findIndex(([c,nm])=>kkpCode(c)===kkpCode(roster.code));
+      if(miRoster<0)return;
+
+      const j=num(r[ji]);
+      if(j>0){
+        groups[gi].people[miRoster].npk=npk;
+        groups[gi].people[miRoster].jjg+=j;
+        groups[gi].totalJjg+=j;
+      }
+    });
+    return groups;
+  };
+  window.ADRIANA_KKP_MASTER=KKP_MASTER;
+  window.ADRIANA_BUILD_KKP=kkpRows;
+  const renderKKP=(d)=>{
+    const host=document.getElementById('kkpProductionBody');if(!host)return;
+    if(!d?.date||((ACTIVE_AFD==='OE')&&d.afd!=='OC')){host.innerHTML='<tr><td colspan="7" class="small">Pilih OCYM / load dataset OC untuk melihat produksi KKP OC PN 1 dan OC PN 2.</td></tr>';const dh0=document.getElementById('kkpDashboardBody');if(dh0)dh0.innerHTML='<tr><td colspan="7" class="small">Pilih OCYM / load dataset OC untuk melihat produksi KKP OC PN 1 dan OC PN 2.</td></tr>';return;}
+    const rows=kkpRows(d).sort((a,b)=>b.totalJjg-a.totalJjg);
+    host.innerHTML=rows.map((g,i)=>`<tr><td><span class="rankBadge ${i===rows.length-1?'low':''}">#${i+1}</span></td><td><b>${html.escape(g.wilayah)}</b></td><td><b>${html.escape(g.kkp)}</b></td><td>${g.people.map(x=>html.escape(x.name)+(x.npk?` <span class="small">(${html.escape(x.npk)})</span>`:'')).join('<br>')}</td><td>${g.people.map(x=>x.jjg.toLocaleString('id-ID')).join('<br>')}</td><td><b>${g.totalJjg.toLocaleString('id-ID')} JJG</b></td><td>${i===0?'TERTINGGI':(i===rows.length-1?'TERENDAH':'')}</td></tr>`).join('');
+    const total=rows.reduce((a,g)=>a+g.totalJjg,0), amantaTotal=num(d?.jjg), gap=amantaTotal-total;
+    const hi=rows[0],lo=rows[rows.length-1];
+    const el=document.getElementById('kkpProductionSummary');if(el)el.innerHTML=`Total roster: <b>${KKP_MASTER.reduce((a,g)=>a+g.members.length,0)} pemanen</b> · Total JJG KKP: <b>${total.toLocaleString('id-ID')}</b> · AMANTA total: <b>${amantaTotal.toLocaleString('id-ID')}</b> · Reconcile: <b>${gap===0?'BALANCE':gap.toLocaleString('id-ID')+' JJG belum terpetakan'}</b> · KKP tertinggi: <b>${html.escape(hi?.wilayah||'—')} / ${html.escape(hi?.kkp||'—')}</b> (${(hi?.totalJjg||0).toLocaleString('id-ID')} JJG) · KKP terendah: <b>${html.escape(lo?.wilayah||'—')} / ${html.escape(lo?.kkp||'—')}</b> (${(lo?.totalJjg||0).toLocaleString('id-ID')} JJG).`;
+    const dh=document.getElementById('kkpDashboardBody');
+    const ds=document.getElementById('kkpDashboardSummary');
+    if(dh){
+      dh.innerHTML=rows.map((g,i)=>`<tr><td><span class="rankBadge ${i===rows.length-1?'low':''}">#${i+1}</span></td><td><b>${html.escape(g.wilayah)}</b></td><td><b>${html.escape(g.kkp)}</b></td><td>${g.people.map(x=>html.escape(x.name)).join('<br>')}</td><td>${g.people.map(x=>x.jjg.toLocaleString('id-ID')).join('<br>')}</td><td><b>${g.totalJjg.toLocaleString('id-ID')}</b></td><td>${i===0?'TERTINGGI':(i===rows.length-1?'TERENDAH':'')}</td></tr>`).join('');
+    }
+    if(ds)ds.innerHTML=`<b>KKP Production:</b> ${total.toLocaleString('id-ID')} JJG dari ${KKP_MASTER.length} KKP / ${KKP_MASTER.reduce((a,g)=>a+g.members.length,0)} pemanen roster. Tertinggi: <b>${html.escape(hi?.wilayah||'—')} / ${html.escape(hi?.kkp||'—')}</b> · Terendah: <b>${html.escape(lo?.wilayah||'—')} / ${html.escape(lo?.kkp||'—')}</b>.`;
+
+  };
+  const basePeopleRows=peopleProductionRows;
+  peopleProductionRows=function(snap){
+    const rows=basePeopleRows(snap),map=rosterMap();
+    return rows.filter(r=>{let hit=map.get('N:'+npkKey(r.npk));if(!hit)hit=map.get('M:'+norm(r.name));return !!hit;});
+  };
+  const prevRenderAll=renderAll;
+  renderAll=function(snap){prevRenderAll(snap);try{renderKKP(snap);renderHistory();}catch(e){console.warn('KKP:',e)}};
+  const oldExport=typeof downloadProductionCSV==='function'?downloadProductionCSV:null;
+  window.downloadKKPProductionCSV=function(){
+    if(!ACTIVE||!window.ADRIANA_DATA){alert('Belum ada dataset aktif.');return;}
+    const rows=kkpRows(window.ADRIANA_DATA).sort((a,b)=>b.totalJjg-a.totalJjg),out=[['ADRIANA KKP HARVEST PRODUCTION'],['AFD','OCYM'],['Tanggal',ACTIVE.date],[],['Rank','Wilayah','KKP','Pemanen','KKP Code','NPK AMANTA','JJG']];
+    rows.forEach((g,i)=>g.people.forEach(x=>out.push([i+1,g.wilayah,g.kkp,x.name,x.code,x.npk,x.jjg])));out.push([]);out.push(['KKP RANKING','Wilayah','KKP','Total JJG']);rows.forEach((g,i)=>out.push([i+1,g.wilayah,g.kkp,g.totalJjg]));downloadCSV(`ADRIANA_KKP_Production_${ACTIVE.date}.csv`,out);
+  };
+  window.addEventListener('load',()=>{renderHistory();});
+  document.addEventListener('DOMContentLoaded',()=>{setTimeout(()=>{if(ACTIVE)renderKKP(ACTIVE);renderHistory();},150);});
+})();
+
 </script>
 </body></html>
